@@ -86,6 +86,7 @@
 
 .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section > button.volgendestap{
     background-color: var(--lichtPaars);
+    color: #000;
     border: 0px;
     border-radius: 30px;
     font-size: 13px;
