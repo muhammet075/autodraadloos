@@ -15,10 +15,7 @@ function Header() {
     function openHamburger(){
         document.querySelector(".navmenu").classList.remove("displaynonemobile");
         document.querySelector(".navmenu > ul").classList.remove("closehamburger");
-
-        setTimeout(() => {
-            document.querySelector(".navmenu > ul").classList.add("openhamburger");
-        }, 100);
+        document.querySelector(".navmenu > ul").classList.add("openhamburger");
     };
 
     function closeHamburger(){
@@ -27,7 +24,7 @@ function Header() {
         
         setTimeout(() => {
         document.querySelector(".navmenu").classList.add("displaynonemobile");
-        }, 300);    
+        }, 200);    
     };
 
 
@@ -41,10 +38,10 @@ function Header() {
 
                 <nav className="navmenu displaynonemobile">
                     <ul>
-                        <li><Link href="">CarPlay laten inbouwen</Link></li>
-                        <li><Link href="">Veelgestelde vragen</Link></li>
-                        <li><Link href="">Contact</Link></li>
-                        <li><Link href="">Offerte</Link></li>
+                        <li><Link onClick={closeHamburger} href="/carplay-laten-inbouwen">CarPlay laten inbouwen</Link></li>
+                        <li><Link onClick={closeHamburger} href="/veelgestelde-vragen">Veelgestelde vragen</Link></li>
+                        <li><Link onClick={closeHamburger} href="/contact">Contact</Link></li>
+                        <li><Link onClick={closeHamburger} href="/offerte">Offerte</Link></li>
                     </ul>
                     <div onClick={closeHamburger}><Image src={closeIco} alt="Sluiten icoon"/></div>
                 </nav>
