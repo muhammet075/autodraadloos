@@ -74,6 +74,29 @@ h1, h2, h3, h4{
   font-family: "Poppins";
 }
 
+h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+}
+
+h3{
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0 0 3px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  h2{
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  h3{
+    font-size: 18px;
+  }
+}
+
 main{
   margin-top: 90px;
 }
