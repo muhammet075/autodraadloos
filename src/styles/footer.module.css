@@ -29,8 +29,8 @@
 }
 
 .footer > div:nth-of-type(1){
-    background-image: url("/autodraadloosfooter.jpg");
-    background-position: 0 39%;
+    background-image: url("/background/carplay-w205.jpg");
+    background-position: 0 15%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 285px;

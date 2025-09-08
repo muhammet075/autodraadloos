@@ -42,14 +42,30 @@ body {
 }
 
 /* Start pagehero background images */
-.pagehero-offerte{
-  background-image: url("/autodraadloosfooter.jpg");
-  background-position: 0 49%;
+.pagehero-carplay-laten-inbouwen{
+  background-image: url("/background/carplay-fiesta.jpg");
+  background-position: 0 20%;
 }
 
-.pagehero-veelgestelde, .pagehero-contact{
-  background-image: url("/autodraadloosfooter.jpg");
-  background-position: 0 49%;
+.pagehero-veelgestelde-vragen{
+  background-image: url("/background/carplay-w205.png");
+  background-position: 0 35%;
+}
+
+ .pagehero-contact{
+  background-image: url("/background/carplay-w205.jpg");
+  background-position: 0 25%;
+}
+
+.pagehero-offerte{
+  background-image: url("/background/autodraadloosfooter.jpg");
+  background-position: 0 40%;
+}
+
+
+.pagehero-mercedes-benz{
+  background-image: url("/background/mercedes-benz-bg.jpg");
+  background-position: 0 62%;
 }
 /* End pagehero background images */
 

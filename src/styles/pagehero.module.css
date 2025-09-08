@@ -48,6 +48,10 @@
     position: relative
 }
 
+.pagehero > div > div section ul li:last-child{
+    padding-right: 0;
+}
+
 .pagehero > div > div section ul li:before {
     content: "";
     position: absolute;
@@ -97,4 +101,35 @@
     }
 }
 
+@media only screen and (max-width: 460px) {
+    .pagehero > div > div section h1 {
+        font-size: 26px;
+        line-height: normal;
+        margin-bottom: 3px;
+    }
 
+    .pagehero > div > div section ul li{
+        padding-right: 15px;
+    }
+
+    .pagehero > div > div section ul li:before{
+        top: 2px;
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-bottom: 4px solid #fff;
+    }
+
+    .pagehero > div > div section ul li a {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .pagehero > div > div section h1 {
+        font-size: 23px;
+    }
+
+    .pagehero > div > div section ul li a {
+        font-size: 10px;
+    }
+}
