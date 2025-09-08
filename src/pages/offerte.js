@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "@/styles/offerte.module.css";
 import euFlag from "@/assets/icons/eu-flag.svg";
 import keus1 from "@/assets/img/keus1.png";
 import keus2 from "@/assets/img/keus2.png";
+import greenCheck from "@/assets/icons/green-check.svg";
 import emailjs from "@emailjs/browser";
 
 
@@ -30,6 +32,7 @@ export default function Offerte() {
     const value = e.target.value.replace(/[^a-zA-Z0-9]/g, "");
     e.target.value = value;
 
+    document.querySelector("#kentekenmerk").innerHTML = "";
     document.querySelector(".kentekeninput").classList.remove("successtate");
     document.querySelector(".kentekeninput").classList.remove("errorstate");
 
@@ -41,8 +44,8 @@ export default function Offerte() {
     } else {
       sessionStorage.setItem("kentekenIngevuld", "false");
       sessionStorage.setItem("kentekenCorrect", "false");
-    }
-  }
+    };
+  };
 
   async function zoekKenteken() {
     let invoerKenteken = sessionStorage.getItem("invoerKenteken");
@@ -58,7 +61,7 @@ export default function Offerte() {
         document.querySelector(".kentekeninput").classList.add("errorstate");
       }, 2000);
       return;
-    }
+    };
 
     setTimeout(() => {
       document.querySelector(".kentekenloadingstate").classList.add("displaynone");
@@ -78,7 +81,7 @@ export default function Offerte() {
         })
       );
     }, 2000);
-  }
+  };
 
   function checkKeuze(e) {
     document.querySelector(".stap2errorstate").innerHTML = "";
@@ -90,8 +93,8 @@ export default function Offerte() {
       document.querySelector("#stap2-keus2").classList.add("selected");
       document.querySelector("#stap2-keus1").classList.remove("selected");
       sessionStorage.setItem("gekozenWens", "Nieuwe groter scherm met CarPlay");
-    }
-  }
+    };
+  };
 
   function checkStap3(e) {
     e.target.classList.remove("empty");
@@ -99,8 +102,8 @@ export default function Offerte() {
     let p = document.querySelector(".stap3");
     if ([...p.children].every((el) => el.classList.contains("empty"))) {
       p.querySelectorAll(".empty").forEach((el) => el.classList.remove("empty"));
-    }
-  }
+    };
+  };
 
   function volgendeStap1() {
     let kentekenCorrect = sessionStorage.getItem("kentekenCorrect") === "true";
@@ -110,26 +113,26 @@ export default function Offerte() {
       document.querySelector(".kentekeninput").classList.remove("successtate");
       document.querySelector(".kentekeninput").classList.add("errorstate");
       return;
-    }
+    };
 
     document.querySelector(".stap1").classList.add("displaynone");
     document.querySelector(".stap2").classList.remove("displaynone");
     document.querySelector("#stap1-sign").classList.remove("activestap");
     document.querySelector("#stap2-sign").classList.add("activestap");
-  }
+  };
 
   function volgendeStap2() {
     let gekozenWens = sessionStorage.getItem("gekozenWens");
     if (!gekozenWens) {
       document.querySelector(".stap2errorstate").innerHTML = "Maak een keuze om verder te gaan.";
       return;
-    }
+    };
 
     document.querySelector(".stap2").classList.add("displaynone");
     document.querySelector(".stap3").classList.remove("displaynone");
     document.querySelector("#stap2-sign").classList.remove("activestap");
     document.querySelector("#stap3-sign").classList.add("activestap");
-  }
+  };
 
   function volgendeStap3() {
     document.querySelector(".emptystatemessage").innerHTML = "";
@@ -185,10 +188,7 @@ export default function Offerte() {
     setTimeout(() => {
         document.querySelector(".offerteloadingstate").classList.add("displaynone");
         document.querySelector(".offerteafgerondstate").classList.remove("displaynone");
-
         emailjs.send(process.env.NEXT_PUBLIC_EMAILJS_SERVICE,"template_09xualb", offerteGegevens, process.env.NEXT_PUBLIC_EMAILJS_API_KEY);
-
-
         sessionStorage.setItem("offerteVerzonden", "true");
     }, 3000);
   };
@@ -198,16 +198,15 @@ export default function Offerte() {
     document.querySelector(".stap1").classList.remove("displaynone");
     document.querySelector("#stap2-sign").classList.remove("activestap");
     document.querySelector("#stap1-sign").classList.add("activestap");
-  }
+  };
 
-  //test
 
   function vorigeStap2() {
     document.querySelector(".stap3").classList.add("displaynone");
     document.querySelector(".stap2").classList.remove("displaynone");
     document.querySelector("#stap3-sign").classList.remove("activestap");
     document.querySelector("#stap2-sign").classList.add("activestap");
-  }
+  };
 
   return (
     <>
@@ -305,8 +304,8 @@ export default function Offerte() {
                 </div>
 
                 <div className="offerteafgerondstate displaynone">
-                    <p>Bedankt voor uw aanvraag! We hebben uw gegevens goed ontvangen en gaan direct voor u aan de slag. U ontvangt binnen 24 uur een reactie van ons met de offerte.</p>
-                    <p>Heeft u in de tussentijd vragen? Neem gerust contact met ons op via</p>
+                    <span><Image src={greenCheck} alt="Succes icoon"/> <p>Uw aanvraag is met succes verzonden!</p></span>
+                    <p>Hartelijk dank voor uw offerteaanvraag. U ontvangt binnen 24 uur een reactie van ons.<br/> Heeft u in de tussentijd vragen? Neem dan gerust contact met ons op via onze <Link href="/contact">contactpagina</Link>.</p>
                 </div>
 
             </section>
