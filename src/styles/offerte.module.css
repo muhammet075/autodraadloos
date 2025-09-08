@@ -1,16 +1,10 @@
 .offerte{
-    background-color: #000000de;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .offerte > div:nth-of-type(1){
     max-width: 1250px;
     padding: 0 15px;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 .offerte > div:nth-of-type(1) > div:nth-of-type(1){
@@ -24,6 +18,10 @@
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
+.offerte > div:nth-of-type(1) > div:nth-of-type(1) p a{
+    color: var(--donkerPaars);
+    text-decoration: underline;
+}
 
 /* Start offerte header */
 .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1){
@@ -261,7 +259,7 @@
 .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(3) > div{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 }
 
 .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(3) > div > section{
@@ -318,6 +316,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 7px;
+    margin: 15px 0;
 }
 
 .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(3) > div > section:nth-of-type(3) > input{
@@ -326,9 +325,8 @@
 }
 
 .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(3) > div > section:nth-of-type(5) > input{
-    width: 150px;
+    width: 120px;
 }
-
 
 .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(4) > div:nth-of-type(2) > span{
     display: flex;
@@ -351,6 +349,85 @@
 /* End offerte container */
 
 
+
+
+/* Start offerte header */
+@media only screen and (max-width: 720px) {
+    .offerte > div:nth-of-type(1){
+        padding: 0;
+    }
+
+    .offerte > div:nth-of-type(1) > div:nth-of-type(1){
+        border-radius: 0;
+        height: 675px;
+    }
+    
+    .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1){
+        padding: 10px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+
+    .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > ul > li{
+        font-size: 12px;
+        gap: 3px;
+        padding: 0 0 5px 0;
+    }    
+
+    .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section > h2{
+        font-size: 23px;;
+    }
+
+    .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section > p{
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(2) > ul{
+        margin: 50px 0 0 0;
+    }
+
+    .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(2) > ul > li{
+        width: 45%;
+    }
+
+    .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(2) > ul > li > img{
+        width: 70%;
+    }
+
+    .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(2) > ul > li > p{
+        width: 85%;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(3) > p{
+        margin-bottom: 15px;
+    }
+
+    .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(3) > div > section > input,
+    .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(3) > div > section > textarea{
+        font-size: 12px;
+        border-radius: 10px;
+    }
+    
+    .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(3) > div > section > textarea{
+        padding: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(2) > ul > li > img{
+        width: 90%;
+    }
+
+    .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(3) > div > section > p, 
+    .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(3) > div > section > label{
+        font-size: 11px;
+    }
+}
+/* End offerte header */
 
 
 

@@ -101,6 +101,15 @@ button{
     font-size: 13px;
 }
 
+@media only screen and (max-width: 600px) {
+  .activestap span{
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+  }
+}
+
+
 .kentekeninput.errorstate{
   border: 2px solid red !important;
 }
@@ -134,7 +143,7 @@ button{
   border: 1px solid var(--donkerPaars) !important;
   background-color: var(--lichtPaars) !important;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px !important;
-  transform: scale(1.05);
+  transform: scale(1.01);
   transition: all .1s ease-in-out;
 }
 
@@ -149,10 +158,22 @@ button{
     bottom: -10px !important;
   }
 
+  @media only screen and (max-width: 650px) {
+    .stap2errorstate, .emptystatemessage{
+      bottom: 50px !important;
+    }
+  }
+
   .emptystatemessage{
     bottom: 85px !important;
     right: 15px !important;
     left: auto !important;
+  }
+
+  @media only screen and (max-width: 720px) {
+      .emptystatemessage{
+        bottom: 100px !important;
+      }
   }
 
   .stap3 .empty{

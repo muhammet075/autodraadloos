@@ -11,7 +11,12 @@ import emailjs from "@emailjs/browser";
 
 
 export default function Offerte() {
-  useEffect(() => {
+useEffect(() => {
+    Object.keys(sessionStorage).forEach(key => {
+        if (key !== "offerteVerzonden") {
+            sessionStorage.removeItem(key);
+        }
+    });
 
     if (sessionStorage.getItem("offerteVerzonden") === "true") {
         document.querySelector(".stap1").classList.add("displaynone");
@@ -26,7 +31,8 @@ export default function Offerte() {
         document.querySelector(".offerteafgerondstate").classList.remove("displaynone");    
     };
 
-    }, []);
+}, []);
+
 
   function checkKenteken(e) {
     const value = e.target.value.replace(/[^a-zA-Z0-9]/g, "");
@@ -229,7 +235,7 @@ export default function Offerte() {
             <div>
               <section className="stap1">
                 <h2>1. Voer uw kenteken in</h2>
-                <p>Vul hieronder het kenteken van uw voertuig in om te beginnen met de offerte. Als u een buitenlands kenteken heeft neem dan contact met ons op.</p>
+                <p>Vul hieronder het kenteken van uw voertuig in om te beginnen met de offerte. Als u een buitenlands kenteken heeft neem dan contact met ons op via de <Link target="_blank" href="/contact">contact</Link> pagina.</p>
 
                 <div className={`${styles.kenteken} kentekeninput`}>
                   <div><Image src={euFlag} alt="Europese unie vlag" /><p>NL</p></div>
@@ -305,7 +311,7 @@ export default function Offerte() {
 
                 <div className="offerteafgerondstate displaynone">
                     <span><Image src={greenCheck} alt="Succes icoon"/> <p>Uw aanvraag is met succes verzonden!</p></span>
-                    <p>Hartelijk dank voor uw offerteaanvraag. U ontvangt binnen 24 uur een reactie van ons.<br/> Heeft u in de tussentijd vragen? Neem dan gerust contact met ons op via onze <Link href="/contact">contactpagina</Link>.</p>
+                    <p>Hartelijk dank voor uw offerteaanvraag. U ontvangt binnen 24 uur een reactie van ons.<br/><br/> Heeft u in de tussentijd vragen? Neem dan gerust contact met ons op via onze <Link target="_blank" href="/contact">contactpagina</Link>.</p>
                 </div>
 
             </section>
