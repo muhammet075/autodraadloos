@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Pagehero from "@/components/pagehero";
 import styles from "@/styles/offerte.module.css";
 import euFlag from "@/assets/icons/eu-flag.svg";
 import keus1 from "@/assets/img/keus1.png";
@@ -225,6 +226,8 @@ useEffect(() => {
         <meta property="og:url" content="https://www.autodraadloos.nl/offerte"/>
         <meta property="og:type" content="website"/>
       </Head>
+
+      <Pagehero pagetitle="Offerte"/>
 
       <div className={styles.offerte}>
         <div>

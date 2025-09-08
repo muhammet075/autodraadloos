@@ -45,6 +45,7 @@
     font-weight: 500;
     letter-spacing: .2px;
     padding: 15px 0;
+    color: #000;
 }
 
 .header > div > nav > ul > li > a:hover{

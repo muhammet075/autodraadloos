@@ -1,10 +1,7 @@
-.offerte{
-}
-
 .offerte > div:nth-of-type(1){
     max-width: 1250px;
     padding: 0 15px;
-    margin: 100px auto;
+    margin: 0 auto 100px auto;
 }
 
 .offerte > div:nth-of-type(1) > div:nth-of-type(1){
@@ -13,7 +10,7 @@
     width: 100%;
     height: auto;
     background-color: #ffff;
-    margin: 150px auto 0 auto;
+    margin: 0 auto;
     border-radius: 8px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -114,9 +111,15 @@
     border: 0px;
     border-radius: 30px;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 600;
     text-transform: uppercase;
     padding: 15px 30px;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section > div.volgendebuttons > button.volgendestap:hover,
+.offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section > div.volgendebuttons > button.vorigestap:hover{
+    opacity: .7;
+    transition: .2s ease;
 }
 
 .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > div.kenteken{
@@ -332,7 +335,7 @@
 }
 
 .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(3) > div:nth-of-type(1) > section:nth-of-type(5) > input{
-    width: 120px;
+    width: 130px;
 }
 
 .offerte > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(4) > div:nth-of-type(2) > span{

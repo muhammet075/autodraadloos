@@ -1,0 +1,84 @@
+.pagehero {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.pagehero > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00081496;
+}
+
+.pagehero > div > div {
+    display: flex;
+    align-items: center;
+    max-width: 1250px;
+    padding: 0 15px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative
+}
+
+.pagehero > div > div section {
+    color: #fff
+}
+
+.pagehero > div > div section h1 {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-bottom: 20px
+}
+
+.pagehero > div > div section ul {
+    display: flex;
+    list-style: none;
+    align-items: center
+}
+
+.pagehero > div > div section ul li {
+    padding-right: 30px;
+    position: relative
+}
+
+.pagehero > div > div section ul li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 7px solid #fff;
+    transform: rotate(90deg)
+}
+
+.pagehero > div > div section ul li:last-child:before {
+    display: none
+}
+
+.pagehero > div > div section ul li a {
+    color: var(--accent1)
+}
+
+@media only screen and (max-width: 650px) {
+    .pagehero {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .pagehero > div > div section ul {
+        font-size: 12px
+    }
+}
+
+
