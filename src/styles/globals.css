@@ -36,7 +36,7 @@ h1, h2, h3, h4{
 }
 
 main{
-  margin-top: 85px;
+  margin-top: 90px;
 }
 
 a {
@@ -50,6 +50,16 @@ button{
 
 .displaynone{
   display: none !important;
+}
+
+@media only screen and (max-width: 670px) {
+  .displaynonemobile{
+    display: none !important;
+  }
+
+  main{
+    margin-top: 75px;
+  }
 }
 
 .openhamburger {

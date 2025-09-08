@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/header.module.css";
 import Logo from "@/assets/logo/autodraadloos-logo.svg";
+import hamburgerIco from "@/assets/icons/hamburger.svg";
+import closeIco from "@/assets/icons/close.svg";
 
 function Header() {
 
@@ -10,11 +12,43 @@ function Header() {
     }, []);
 
 
+    function openHamburger(){
+        document.querySelector(".navmenu").classList.remove("displaynonemobile");
+        document.querySelector(".navmenu > ul").classList.remove("closehamburger");
+
+        setTimeout(() => {
+            document.querySelector(".navmenu > ul").classList.add("openhamburger");
+        }, 100);
+    };
+
+    function closeHamburger(){
+        document.querySelector(".navmenu > ul").classList.remove("openhamburger");
+        document.querySelector(".navmenu > ul").classList.add("closehamburger");
+        
+        setTimeout(() => {
+        document.querySelector(".navmenu").classList.add("displaynonemobile");
+        }, 300);    
+    };
+
+
 
     return(      
         <header className={styles.header}>  
             <div>   
                 <Link href="/"><Image src={Logo} alt="Logo van AutoDraadloos.nl"/></Link>
+
+                <button onClick={openHamburger}><Image src={hamburgerIco} alt="Menu icoon"/></button>
+
+                <nav className="navmenu displaynonemobile">
+                    <ul>
+                        <li><Link href="">CarPlay laten inbouwen</Link></li>
+                        <li><Link href="">Veelgestelde vragen</Link></li>
+                        <li><Link href="">Contact</Link></li>
+                        <li><Link href="">Offerte</Link></li>
+                    </ul>
+                    <div onClick={closeHamburger}><Image src={closeIco} alt="Sluiten icoon"/></div>
+                </nav>
+
             </div>
         </header>
     )
