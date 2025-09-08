@@ -4,14 +4,14 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXC5CN7M0Q"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-B47DY5CS6J"></script>
       <script
         dangerouslySetInnerHTML={{
           __html: `window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-WXC5CN7M0Q');`
+          gtag('config', 'G-B47DY5CS6J');`
         }}
       />
       </Head>

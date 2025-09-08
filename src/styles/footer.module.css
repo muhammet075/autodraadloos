@@ -1,0 +1,313 @@
+.footer{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background: #25d366;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .07), 0 2px 4px rgba(0, 0, 0, .07), 0 4px 8px rgba(0, 0, 0, .07), 0 8px 16px rgba(0, 0, 0, .07), 0 16px 32px rgba(0, 0, 0, .07), 0 32px 64px rgba(0, 0, 0, .07);
+}
+
+.footer > a:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.footer > a > img{
+    width: 25px;
+    height: auto;
+}
+
+.footer > div:nth-of-type(1){
+    background-image: url("/autodraadloosfooter.jpg");
+    background-position: 0 39%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 285px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer > div:nth-of-type(1) > div{
+    background-color: #000814c7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer > div:nth-of-type(1) > div > div{
+    max-width: 1250px;
+    padding: 0 15px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer > div:nth-of-type(1) > div > div > section{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: fit-content;
+    width: auto;
+}
+
+.footer > div:nth-of-type(1) > div > div > section h3{
+    color: #ffff;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-bottom: 15px;
+}
+
+.footer > div:nth-of-type(1) > div > div > section > div{
+    display: flex;
+    gap: 25px;
+}
+
+.footer > div:nth-of-type(1) > div > div > section > div a{
+    display: block;
+    height: 100%;
+    padding: 15px 0;
+    background-color: var(--donkerPaars);
+    border-radius: 25px;
+    width: 200px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px; 
+}
+
+.footer > div:nth-of-type(1) > div > div > section > div a:hover{
+    opacity: 0.8;
+    transition: 0.2s ease;
+}
+
+
+.footer > div:nth-of-type(1) > div > div > section > div a:nth-of-type(2){
+    background-color: #ffff;
+    color: #000;
+    border: 1.5px solid #000;
+}
+
+.footer > div:nth-of-type(1) > div > div > section > div a:nth-of-type(2):hover{
+    background-color: #000;
+    color: #ffff;
+    transition: 0.2s;
+}
+
+
+
+.footer > div:nth-of-type(2){
+    width: 100%;
+    background-color: var(--donkerPaars);
+}
+
+.footer > div:nth-of-type(2) > div{
+    max-width: 1250px;
+    padding: 75px 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer > div:nth-of-type(2) > div ul{
+    list-style-type: none;
+    position: relative;
+}
+
+.footer > div:nth-of-type(2) > div ul li{
+    margin: 0 0 10px 0;
+    color: #ffff;
+    font-size: 15px;
+}
+
+.footer > div:nth-of-type(2) > div ul li b{
+    font-weight: 600;
+}
+
+.footer > div:nth-of-type(2) > div ul li h2{
+    color: #ffff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.footer > div:nth-of-type(2) > div ul li a:hover{
+    color: var(--hover1);
+    transition: 0.2s ease;
+}
+
+.footer > div:nth-of-type(2) > div > ul > li > a > img{
+    max-width: 175px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.footer > div:nth-of-type(2) > div ul li > ul{
+    display: flex;
+}
+
+.footer > div:nth-of-type(2) > div ul li > ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.footer > div:nth-of-type(2) > div ul li > ul li{
+    width: 40px;
+    height: 40px;
+    margin: 0;
+}
+
+.footer > div:nth-of-type(2) > div ul li > ul li a{
+    height: 100%;
+    width: 100%;
+    background-color: var(--groen);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > div:nth-of-type(2) > div ul li > ul li a:hover{
+    opacity: 0.7;
+    transition: 0.2s ease;
+}
+
+.footer > div:nth-of-type(2) > div ul li > ul li a img{
+    width: 25px;
+    height: auto;
+}
+     
+.footer > div:nth-of-type(3){
+    background-color: #ffff;
+    color: #000;
+}
+
+.footer > div:nth-of-type(3) > div{
+    max-width: 1250px;
+    padding: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.footer > div:nth-of-type(3) > div p{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.footer > div:nth-of-type(3) > div span{
+    font-size: 13px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.footer > div:nth-of-type(3) > div span a{
+    margin: 0 5px;
+    color: #ecb102;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.footer > div:nth-of-type(3) > div span img{
+    width: 45px;
+    height: auto;
+}
+
+@media only screen and (max-width: 1215px) {
+    .footer > div:nth-of-type(1) > div > div > section{
+        left: 15px;
+    }
+
+    .footer > div:nth-of-type(2) > div{
+        padding: 75px 15px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .footer > div:nth-of-type(2) > div ul li h2{
+        font-size: 21px;
+    }
+
+    .footer > div:nth-of-type(2) > div ul li{
+        font-size: 12px;
+    }
+
+    .footer > div:nth-of-type(2) > div ul li a img{
+        max-width: 150px;
+    }
+}
+
+@media only screen and (max-width: 915px) {
+    .footer > div:nth-of-type(2) > div ul li h2{
+        font-size: 18px;
+    }
+
+    .footer > div:nth-of-type(2) > div ul li{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .footer > div:nth-of-type(2) > div{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer > div:nth-of-type(2) > div ul li h2{
+        font-size: 25px;
+    }
+
+    .footer > div:nth-of-type(2) > div ul li{
+        font-size: 15px;
+    }
+
+    .footer > div:nth-of-type(2) > div ul li a img{
+        max-width: 150px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .footer > div:nth-of-type(3) > div{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer > div:nth-of-type(1){
+        height: 350px;
+    }
+
+    .footer > div:nth-of-type(1) > div > div > section h3{
+        font-size: 25px;
+        line-height: 32px;
+        margin: 0 15px 15px 0 ;
+    }
+
+    .footer > div:nth-of-type(1) > div > div > section > div{
+        flex-direction: column;
+        gap: 20px;
+    }
+}

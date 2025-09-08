@@ -1,0 +1,24 @@
+.home{
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.home h1{
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 15px 0;;
+}
+
+.home a{
+    background-color: var(--donkerPaars);
+    display: block;
+    padding: 10px 0;
+    width: 200px;
+    border-radius: 20px;
+    color: #ffff;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 25px auto 0 auto;
+}

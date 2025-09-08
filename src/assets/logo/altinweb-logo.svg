@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_2" data-name="Laag 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1766.22 1077.81">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Naamloos_verloop_74-8);
+      }
+
+      .cls-2 {
+        fill: url(#Naamloos_verloop_74-6);
+      }
+
+      .cls-3 {
+        fill: url(#Naamloos_verloop_74-5);
+      }
+
+      .cls-4 {
+        fill: url(#Naamloos_verloop_74-7);
+      }
+
+      .cls-5 {
+        fill: url(#Naamloos_verloop_74-2);
+      }
+
+      .cls-6 {
+        fill: url(#Naamloos_verloop_74-3);
+      }
+
+      .cls-7 {
+        fill: url(#Naamloos_verloop_74-4);
+      }
+
+      .cls-8 {
+        fill: url(#Naamloos_verloop_21);
+      }
+
+      .cls-9 {
+        fill: url(#Naamloos_verloop_74);
+      }
+    </style>
+    <linearGradient id="Naamloos_verloop_21" data-name="Naamloos verloop 21" x1="627.55" y1="766.02" x2="1138.01" y2="255.56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d37900"/>
+      <stop offset=".25" stop-color="#f2bc00"/>
+      <stop offset=".53" stop-color="#ffe300"/>
+      <stop offset=".78" stop-color="#ecb000"/>
+      <stop offset="1" stop-color="#d47800"/>
+    </linearGradient>
+    <linearGradient id="Naamloos_verloop_74" data-name="Naamloos verloop 74" x1="118.7" y1="1077.81" x2="118.7" y2="812.66" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d37900"/>
+      <stop offset="0" stop-color="#d47c00"/>
+      <stop offset=".78" stop-color="#f4c102"/>
+      <stop offset="1" stop-color="#d47800"/>
+    </linearGradient>
+    <linearGradient id="Naamloos_verloop_74-2" data-name="Naamloos verloop 74" x1="349.04" x2="349.04" xlink:href="#Naamloos_verloop_74"/>
+    <linearGradient id="Naamloos_verloop_74-3" data-name="Naamloos verloop 74" x1="514.78" x2="514.78" xlink:href="#Naamloos_verloop_74"/>
+    <linearGradient id="Naamloos_verloop_74-4" data-name="Naamloos verloop 74" x1="670.51" x2="670.51" xlink:href="#Naamloos_verloop_74"/>
+    <linearGradient id="Naamloos_verloop_74-5" data-name="Naamloos verloop 74" x1="848.19" x2="848.19" xlink:href="#Naamloos_verloop_74"/>
+    <linearGradient id="Naamloos_verloop_74-6" data-name="Naamloos verloop 74" x1="1157.36" x2="1157.36" xlink:href="#Naamloos_verloop_74"/>
+    <linearGradient id="Naamloos_verloop_74-7" data-name="Naamloos verloop 74" x1="1442.63" x2="1442.63" xlink:href="#Naamloos_verloop_74"/>
+    <linearGradient id="Naamloos_verloop_74-8" data-name="Naamloos verloop 74" x1="1667.72" x2="1667.72" xlink:href="#Naamloos_verloop_74"/>
+  </defs>
+  <g id="Laag_1-2" data-name="Laag 1">
+    <g>
+      <path class="cls-8" d="m882.46,0c-124.83,215.48-249.66,430.96-374.49,646.44h309.03v-117.23h-103.41c56.52-97.56,113.03-195.12,169.55-292.67,56.71,97.56,113.42,195.12,170.14,292.67h-103.41v117.23h308.38C1132.98,430.96,1007.72,215.48,882.46,0"/>
+      <g>
+        <path class="cls-9" d="m96.47,812.66h33.44v43.92h-11.58l-74.97,221.24H0l96.47-265.15Zm-37.67,160.41h119.81l11.94,33.08H46.86l11.94-33.08Zm60.45-116.5v-43.92h21.87l96.29,265.15h-43.37l-74.79-221.24Z"/>
+        <path class="cls-5" d="m266.62,812.66h41.16v229.51h123.66v35.65h-164.82v-265.15Z"/>
+        <path class="cls-6" d="m494.11,848.3h-81.03v-35.65h203.41v35.65h-81.03v229.51h-41.34v-229.51Z"/>
+        <path class="cls-7" d="m649.93,812.66h41.16v265.15h-41.16v-265.15Z"/>
+        <path class="cls-3" d="m739.97,812.66h38.04l163.17,234.28-43.55-38.59h17.82v-195.69h40.98v265.15h-38.04l-163.17-234.65,43.55,38.4h-17.82v196.25h-40.98v-265.15Z"/>
+        <path class="cls-2" d="m988.76,812.66h43l49.25,207.64h.92l55.86-207.64h39.14l55.86,207.64h.92l49.25-207.64h43l-71.48,265.15h-39.69l-56.96-199.74h-.92l-56.96,199.74h-39.69l-71.48-265.15Z"/>
+        <path class="cls-4" d="m1358.47,812.66h168.32v35.65h-127.16v77.18h120.36v34.55h-120.36v82.14h127.16v35.65h-168.32v-265.15Z"/>
+        <path class="cls-1" d="m1569.23,812.66h41.16v265.15h-41.16v-265.15Zm20.58,231.53h77.54c18.38,0,32.4-3.68,42.08-11.03,9.68-7.35,14.52-18.07,14.52-32.16v-.37c0-9.56-2.24-17.52-6.71-23.89-4.47-6.37-11.12-11.18-19.94-14.42-8.82-3.24-19.78-4.87-32.89-4.87h-74.6v-31.79h66.33c18.13,0,31.97-3.55,41.53-10.66,9.56-7.1,14.33-17.27,14.33-30.5v-.37c0-12.25-4.07-21.62-12.22-28.11-8.15-6.49-19.69-9.74-34.64-9.74h-75.34v-33.63h85.26c15.8,0,29.55,2.73,41.25,8.18,11.7,5.45,20.76,13.17,27.2,23.15,6.43,9.99,9.65,21.65,9.65,35v.37c0,9.31-2.14,18.13-6.43,26.46-4.29,8.33-10.14,15.31-17.55,20.95-7.41,5.64-15.83,9.13-25.27,10.47v.74c12.62,1.23,23.61,4.75,32.98,10.57,9.37,5.82,16.6,13.35,21.68,22.6,5.08,9.25,7.63,19.75,7.63,31.51v.37c0,15.56-3.65,28.91-10.93,40.06-7.29,11.15-17.67,19.72-31.15,25.73-13.48,6-29.65,9-48.51,9h-85.81v-33.63Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
