@@ -10,12 +10,13 @@ export default function Home() {
   return (
     <>
       <Head>
-          <title>AutoDraadloos.nl</title>
-          <meta name="description" content=""/>
-          <meta name="og:description" content=""/>
-          <meta name="keywords" content=""/>
-          <meta property="og:url" content=""/>
-          <meta property="og:title" content=""/>
+        <title>AutoDraadloos.nl | Apple CarPlay & Android Auto</title>
+        <meta name="description" content="AutoDraadloos biedt professionele installatie van Apple CarPlay & Android Auto voor uw auto. Vraag direct informatie of een offerte aan."/>
+        <meta name="keywords" content="Apple CarPlay, Android Auto, auto installatie, AutoDraadloos, navigatie, autoradio, autoscherm, scherm"/>
+        <meta property="og:title" content="AutoDraadloos.nl | Apple CarPlay & Android Auto Installatie"/>
+        <meta property="og:description" content="AutoDraadloos biedt professionele installatie van Apple CarPlay & Android Auto voor uw auto. Vraag direct informatie of een offerte aan."/>
+        <meta property="og:url" content="https://www.autodraadloos.nl/"/>
+        <meta property="og:type" content="website"/>
       </Head>
 
       <div className={styles.home}>

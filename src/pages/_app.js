@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta name="format-detection" content="telephone=no"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <meta property="og:image" content="/logo.png" />
+        <meta property="og:image" content="/ogimg.png"/>
         <link href="/favico.svg" rel="icon" type="image/svg"/>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
