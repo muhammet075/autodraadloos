@@ -200,6 +200,8 @@ export default function Offerte() {
     document.querySelector("#stap1-sign").classList.add("activestap");
   }
 
+  //test
+
   function vorigeStap2() {
     document.querySelector(".stap3").classList.add("displaynone");
     document.querySelector(".stap2").classList.remove("displaynone");
