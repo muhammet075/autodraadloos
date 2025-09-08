@@ -223,7 +223,7 @@ useEffect(() => {
         <meta name="keywords" content="Apple CarPlay, Android Auto, auto, installatie, offerte, AutoDraadloos"/>
         <meta property="og:title" content="AutoDraadloos.nl | Offerte"/>
         <meta property="og:description" content="Vraag eenvoudig een offerte aan voor Apple CarPlay & Android Auto installatie bij AutoDraadloos."/>
-        <meta property="og:url" content="https://www.autodraadloos.nl/offerte"/>
+        <meta property="og:url" content="https://www.autodraadloos.nl/offerte/"/>
         <meta property="og:type" content="website"/>
       </Head>
 

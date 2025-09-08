@@ -69,13 +69,29 @@
     color: var(--accent1)
 }
 
-@media only screen and (max-width: 650px) {
-    .pagehero {
-        margin-bottom: 50px;
+@media only screen and (max-width: 870px) {
+    .pagehero{
+        margin-top: -10px;
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 770px) {
+    .pagehero{
+        margin-top: -20px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .pagehero {
+        height: 200px;
+        margin-bottom: 50px;
+    }
+
+    .pagehero > div > div section h1 {
+        font-size: 32px;
+        margin-bottom: 7px;
+    }
+
     .pagehero > div > div section ul {
         font-size: 12px
     }

@@ -46,6 +46,11 @@ body {
   background-image: url("/autodraadloosfooter.jpg");
   background-position: 0 49%;
 }
+
+.pagehero-veelgestelde, .pagehero-contact{
+  background-image: url("/autodraadloosfooter.jpg");
+  background-position: 0 49%;
+}
 /* End pagehero background images */
 
 
