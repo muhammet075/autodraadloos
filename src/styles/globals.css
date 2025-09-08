@@ -138,7 +138,6 @@ button{
     color: #00d829;
 }
 
-
 .stap2keus.selected{
   border: 1px solid var(--donkerPaars) !important;
   background-color: var(--lichtPaars) !important;
@@ -155,12 +154,12 @@ button{
     position: absolute !important;
     left: 0 !important;
     right: 0 !important;
-    bottom: -10px !important;
+    bottom: 5px !important;
   }
 
   @media only screen and (max-width: 650px) {
     .stap2errorstate, .emptystatemessage{
-      bottom: 50px !important;
+      bottom: 65px !important;
     }
   }
 
@@ -182,7 +181,7 @@ button{
 
   .offerteloadingstate{
     text-align: center;
-    margin: 100px 0 0 0 ;
+    margin: 100px 0 125px 0;
   }
 
 .offerteloadingstate > span{

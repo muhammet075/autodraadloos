@@ -254,7 +254,9 @@ useEffect(() => {
                   <p>Kenteken wordt gezocht...</p>
                 </div>
 
-                <button onClick={volgendeStap1} className={styles.volgendestap}>Volgende stap</button>
+                <div className={styles.volgendebuttons}>
+                  <button onClick={volgendeStap1} className={styles.volgendestap}>Volgende stap</button>
+                </div>
               </section>
 
               <section className="stap2 displaynone">
@@ -267,8 +269,11 @@ useEffect(() => {
                 </ul>
 
                 <p className="stap2errorstate"></p>
-                <button onClick={volgendeStap2} className={styles.volgendestap}>Volgende stap</button>
-                <button onClick={vorigeStap1} className={styles.vorigestap}>Vorige stap</button>
+
+                <div className={styles.volgendebuttons}>
+                  <button onClick={volgendeStap2} className={styles.volgendestap}>Volgende stap</button>
+                  <button onClick={vorigeStap1} className={styles.vorigestap}>Vorige</button>
+                </div>
               </section>
 
               <section className="stap3 displaynone">
@@ -302,8 +307,10 @@ useEffect(() => {
                   <p className="emptystatemessage"></p>
                 </div>
 
-                <button onClick={volgendeStap3} className={styles.volgendestap}>Versturen</button>
-                <button onClick={vorigeStap2} className={styles.vorigestap}>Vorige stap</button>
+                <div className={styles.volgendebuttons}>
+                  <button onClick={volgendeStap3} className={styles.volgendestap}>Versturen</button>
+                  <button onClick={vorigeStap2} className={styles.vorigestap}>Vorige</button>
+                </div>
               </section>
 
             
