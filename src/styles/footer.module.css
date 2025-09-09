@@ -179,7 +179,7 @@
 .footer > div:nth-of-type(2) > div ul li > ul li a{
     height: 100%;
     width: 100%;
-    background-color: var(--groen);
+    background-color: #000;
     border-radius: 5px;
     display: flex;
     justify-content: center;

@@ -67,7 +67,7 @@
     transition: .2s ease-in-out;
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 970px) {
     .header > div > a > img{
         width: 200px;
         height: auto;
@@ -87,7 +87,7 @@
     }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 870px) {
     .header > div > a > img{
         width: 150px;
         height: auto;
@@ -102,7 +102,7 @@
     }
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 770px) {
     .header > div{
         height: 75px;
     }

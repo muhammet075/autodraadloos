@@ -40,6 +40,7 @@ function Header() {
                     <ul>
                         <li><Link onClick={closeHamburger} href="/carplay-laten-inbouwen">CarPlay laten inbouwen</Link></li>
                         <li><Link onClick={closeHamburger} href="/veelgestelde-vragen">Veelgestelde vragen</Link></li>
+                        <li><Link onClick={closeHamburger} href="/portfolio">Portfolio</Link></li>
                         <li><Link onClick={closeHamburger} href="/contact">Contact</Link></li>
                         <li><Link onClick={closeHamburger} href="/offerte">Offerte</Link></li>
                     </ul>

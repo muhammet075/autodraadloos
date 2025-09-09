@@ -42,10 +42,10 @@ function Footer() {
             <li><b>KVK:</b> Binnenkort beschikbaar</li>
             <li>
               <ul>
-                <li><Link href="https://www.tiktok.com/@autodraadloos/" target="_blank"><Image src={Tiktok} alt="TikTok Logo"/></Link></li>
-                <li><Link href="https://www.instagram.com/autodraadloos/" target="_blank"><Image src={Instagram} alt="Instagram Logo"/></Link></li>
-                <li><Link href="https://www.facebook.com/autodraadloos/" target="_blank"><Image src={Facebook} alt="Facebook Logo"/></Link></li>
-                <li><Link href="https://api.whatsapp.com/send/?phone=31657836190" target="_blank"><Image src={WhatsApp} alt="WhatsApp Logo"/></Link></li>
+                <li><Link href="https://www.tiktok.com/@autodraadloos/" target="_blank" title="TikTok"><Image src={Tiktok} alt="TikTok Logo"/></Link></li>
+                <li><Link href="https://www.instagram.com/autodraadloos/" target="_blank" title="Instagram"><Image src={Instagram} alt="Instagram Logo"/></Link></li>
+                <li><Link href="https://www.facebook.com/autodraadloos/" target="_blank" title="Facebook"><Image src={Facebook} alt="Facebook Logo"/></Link></li>
+                <li><Link href="https://api.whatsapp.com/send/?phone=31657836190" target="_blank" title="WhatsApp"><Image src={WhatsApp} alt="WhatsApp Logo"/></Link></li>
               </ul>
             </li>
           </ul>
@@ -54,8 +54,10 @@ function Footer() {
             <li><h2>Pagina's</h2></li>
             <li><Link href="/">Home</Link></li>
             <li><Link href="/portfolio">Portfolio</Link></li>
-            <li><Link href="/offerte">Offerte</Link></li>
             <li><Link href="/contact">Contact</Link></li>
+            <li><Link href="/offerte">Offerte</Link></li>
+            <li><Link href="/veelgestelde-vragen">Veelgestelde vragen</Link></li>
+            <li><Link href="/carplay-laten-inbouwen">CarPlay laten inbouwen</Link></li>
           </ul>
 
           <ul>
@@ -89,7 +91,7 @@ function Footer() {
           </div>
         </div>
 
-        <Link target="_blank" href="https://api.whatsapp.com/send/?phone=31657836190"><Image src={WhatsApp} alt="WhatsApp logo"/></Link>
+        <Link target="_blank" href="https://api.whatsapp.com/send/?phone=31657836190" title="WhatsApp"><Image src={WhatsApp} alt="WhatsApp logo"/></Link>
         
       </footer>
 

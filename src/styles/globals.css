@@ -57,13 +57,13 @@ body {
   background-position: 0 25%;
 }
 
-.pagehero-offerte{
+.pagehero-offerte, .pagehero-wordt-aan-gewerkt{
   background-image: url("/background/autodraadloosfooter.jpg");
   background-position: 0 40%;
 }
 
 
-.pagehero-mercedes-benz{
+.pagehero-mercedes-benz, .pagehero-portfolio{
   background-image: url("/background/mercedes-benz-bg.jpg");
   background-position: 0 62%;
 }
@@ -77,23 +77,31 @@ h1, h2, h3, h4{
 h2{
   font-size: 30px;
   font-weight: 500;
-  margin: 0 0 5px 0;
+  margin: 0 0 15px 0;
 }
 
 h3{
   font-size: 26px;
   font-weight: 500;
-  margin: 0 0 3px 0;
+  margin: 0 0 5px 0;
+}
+
+p{
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 600px) {
   h2{
     font-size: 22px;
-    line-height: 27px;
+    line-height: 30px;
   }
 
   h3{
     font-size: 18px;
+  }
+
+  p{
+    font-size: 13px;
   }
 }
 
@@ -114,7 +122,7 @@ button{
   display: none !important;
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 770px) {
   .displaynonemobile{
     display: none !important;
   }
@@ -277,3 +285,19 @@ button{
     }
 } 
 
+
+
+.portfolio{
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.portfolio p{
+  margin: 0 0 25px 0;
+}
+
+.portfolio p a{
+  color: var(--donkerPaars);
+  text-decoration: underline;
+}

@@ -73,19 +73,19 @@
     color: var(--accent1)
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 970px) {
     .pagehero{
         margin-top: -10px;
     }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 870px) {
     .pagehero{
         margin-top: -20px;
     }
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 770px) {
     .pagehero {
         height: 200px;
         margin-bottom: 50px;
