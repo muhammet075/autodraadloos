@@ -21,6 +21,10 @@
     height: auto;
 }
 
+.autocategorie > div:nth-of-type(1) > section:nth-of-type(2) > h2{
+    margin: 0 0 10px 0 !important;
+}
+
 .autocategorie > div:nth-of-type(2){
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
