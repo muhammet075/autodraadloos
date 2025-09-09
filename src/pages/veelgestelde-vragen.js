@@ -23,6 +23,7 @@ export default function veelgesteldeVragen() {
       <Pagehero pagetitle="Veelgestelde vragen"/>
 
       <div className={styles.vragen}>
+        <p>Wordt aan gewerkt...</p>
       </div>
     </>
   );

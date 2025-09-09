@@ -1,0 +1,48 @@
+.productpagina{ 
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.productpagina > div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: unset;
+}
+
+.productpagina > div:nth-of-type(1) > .productfotos{
+    width: 53%;
+}
+
+.productpagina > div:nth-of-type(1) > .productgegevens{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #ffff;
+    border-radius: 5px;
+    padding: 25px;
+    width: 45%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.productpagina > div:nth-of-type(1) > .productgegevens > h2{
+    font-size: 24px;
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 770px) {
+    .productpagina > div:nth-of-type(1){
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .productpagina > div:nth-of-type(1) > .productfotos{
+        width: 100%;
+    }
+
+    .productpagina > div:nth-of-type(1) > .productgegevens{
+        width: 100%;
+    }
+}

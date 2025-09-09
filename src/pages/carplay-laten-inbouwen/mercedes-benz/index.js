@@ -27,7 +27,7 @@ export default function MercedesBenz() {
   });
 
   const mercedesModellen = [
-  { name: "A-Klasse", slug: "a-klasse", image: aKlasseImg },
+  { name: "A-Klasse", slug: "/carplay-laten-inbouwen/mercedes-benz/a-klasse", image: aKlasseImg },
   { name: "B-Klasse", slug: "b-klasse", image: bKlasseImg },
   { name: "C-Klasse", slug: "c-klasse", image: cKlasseImg },
   { name: "E-Klasse", slug: "e-klasse", image: eKlasseImg },
