@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/footer.module.css";
@@ -11,6 +12,13 @@ import knopklokReviewLogo from "@/assets/img/knipklok-logo.png";
 import Instagramfeed from "@/components/instagramfeed";
 
 function Footer() {
+
+  useEffect(() => {
+    setInterval(()=>document.querySelectorAll('.eapp-cookie-consent-widget-container > a').forEach(el=>el.removeAttribute('style')),10);
+  }, []);
+  
+
+
   return (
     <>
 
@@ -94,6 +102,8 @@ function Footer() {
         <Link target="_blank" href="https://api.whatsapp.com/send/?phone=31657836190" title="WhatsApp"><Image src={WhatsApp} alt="WhatsApp logo"/></Link>
         
       </footer>
+      
+      <div class="elfsight-app-efec9043-bcb6-4ceb-b208-fe40087e48bf" data-elfsight-app-lazy></div>
 
       <script src="https://elfsightcdn.com/platform.js" async></script>
     </>
