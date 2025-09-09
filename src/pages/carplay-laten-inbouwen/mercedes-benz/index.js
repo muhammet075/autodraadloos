@@ -65,9 +65,9 @@ export default function MercedesBenz() {
           <section>
             <Image src={mercedesLogo} alt="Logo van Mercedes-Benz"/>
           </section>
-          <section>
+          <section className={styles.seo}>
             <h2>Kies uw uitvoering van uw Mercedes-Benz</h2>
-            <p>Wil je Apple CarPlay en Android Auto laten plaatsen in je Mercedes-Benz, met een groter scherm? Zo kun je makkelijk bellen, muziek luisteren en navigeren tijdens het rijden. Kies hieronder welke uitvoering van de Mercedes-Benz je hebt en maak je rit nog fijner en handiger.</p>
+            <p>Wil je <b>Apple CarPlay</b> en/of <b>Android Auto</b> laten plaatsen in je <b>Mercedes-Benz</b>, met een <b>groter scherm</b>? Zo kun je makkelijk bellen, muziek luisteren en navigeren tijdens het rijden. Kies hieronder welke uitvoering van de <b>Mercedes-Benz</b> je hebt en maak je rit nog fijner en handiger.</p>
           </section>
         </div>
         
