@@ -40,7 +40,7 @@
 }
 
 .carplay > div:nth-of-type(2) > a:hover{
-    background-color: var(--lichtPaars);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     transition: .3s ease-in-out;
 }
 
@@ -63,6 +63,11 @@
     font-size: 18px;
     font-weight: 500;
     text-align: center;
+}
+
+.carplay > div:nth-of-type(2) > a:hover > h3{
+    color: var(--donkerPaars);
+    transition: .3s ease-in-out;
 }
 
 @media only screen and (max-width: 760px) {
@@ -93,9 +98,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 15px;
     }
-}
-
-@media only screen and (max-width: 480px) {
+    
     .carplay > div:nth-of-type(2) > a > img{
         width: 60px;
     }
