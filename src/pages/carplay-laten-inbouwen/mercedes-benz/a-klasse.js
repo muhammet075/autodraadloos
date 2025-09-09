@@ -4,12 +4,17 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "@/styles/autocategorie/productpagina.module.css";
 import Pagehero from "@/components/pagehero";
-import mercedesLogo from "@/assets/automerken/mercedes-benz.svg";
-import aKlasseImg from "@/assets/mercedes/mercedes-benz-a-klasse.png";
-
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-
+import greenCheck from "@/assets/icons/greencheck.svg";
+import betalingIco from "@/assets/icons/betaling.svg";
+import garantieIco from "@/assets/icons/garantie.svg";
+import montagebijuIco from "@/assets/icons/montagebiju.svg";
+import draadloosIco from "@/assets/icons/draadloos.svg";
+import whatsappIco from "@/assets/icons/whatsapp.svg";
+import offerteIco from "@/assets/icons/offerte.svg";
+import mailIco from "@/assets/icons/mail.svg";
+import closeIco from "@/assets/icons/close.svg";
 
 export default function AKlasse() {
   useEffect(() => {
@@ -33,46 +38,77 @@ export default function AKlasse() {
 
   const images = [
   {
-    original: "/mercedes/a-klasse/3.png",
+    original: "/mercedes/a-klasse/w176-1.png",
     originalAlt: "yok",
     originalTitle: "",
-    thumbnail: "/mercedes/a-klasse/3.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-    {
-    original: "/mercedes/a-klasse/w176-groiterscherm.jpeg",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/a-klasse/w176-groiterscherm.jpeg",
+    thumbnail: "/mercedes/a-klasse/w176-1.png",
     thumbnailAlt: "",
     thumbnailTitle: "",
   },
   {
-    original: "/mercedes/a-klasse/2.png",
+    original: "/mercedes/a-klasse/w176-2.png",
     originalAlt: "yok",
     originalTitle: "",
-    thumbnail: "/mercedes/a-klasse/2.png",
+    thumbnail: "/mercedes/a-klasse/w176-2.png",
     thumbnailAlt: "",
     thumbnailTitle: "",
   },
   {
-    original: "/mercedes/a-klasse/1.png",
+    original:  "/mercedes/a-klasse/w176-3-groterscherm.jpeg",
     originalAlt: "yok",
     originalTitle: "",
-    thumbnail: "/mercedes/a-klasse/1.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original: "/mercedes/a-klasse/4.PNG",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/a-klasse/4.PNG",
+    thumbnail:  "/mercedes/a-klasse/w176-3-groterscherm.jpeg",
     thumbnailAlt: "",
     thumbnailTitle: "",
   },
 ];
+
+
+function checkOpties(e) {
+    const gekozenModel = e.target.value;
+
+    const opties = {
+        "A-Klasse W169": [
+            { 
+                tekst: "Nieuwe groter scherm + Apple CarPlay en Android Auto", 
+                prijs: "€ 450,-" 
+            }
+        ],
+
+        "A-Klasse W176": [
+            { 
+                tekst: "Apple CarPlay en Android Auto op het originele scherm", 
+                prijs: "€ 300,-" 
+            },
+            { 
+                tekst: "Nieuwe groter scherm + Apple CarPlay en Android Auto", 
+                prijs: "Vanaf € 800,-" 
+            }
+        ],
+
+        "A-Klasse W177": [
+            { 
+                tekst: "Apple CarPlay en Android Auto op het originele scherm", 
+                prijs: "€ 500,-" 
+            }
+        ]
+    };
+
+    document.querySelector(".beschibaarheidtitel").classList.remove("displaynone");
+    document.querySelectorAll(".beschikbareoptie1, .beschikbareoptie2")
+    .forEach((el, i) => {
+        const o = (opties[gekozenModel] || [])[i];
+        el.classList.toggle("displaynone", !o);
+        if (o) el.querySelectorAll("p")[0].textContent = o.tekst,
+            el.querySelectorAll("p")[1].textContent = o.prijs;
+    });
+};
+
+
+
+function maakAfspraak(){
+    document.querySelector(".afspraakcontainer").classList.remove("displaynone");
+}
 
   
   return (
@@ -94,25 +130,30 @@ export default function AKlasse() {
         <div>
 
             <div className={styles.productfotos}>
-                <ImageGallery items={images} />
+                <ImageGallery items={images} showPlayButton={false}/>
             </div>
 
             <div className={styles.productgegevens}>
                 <h2>Apple CarPlay & Android Auto voor de A-Klasse</h2>
 
                 <ul>
-                    <li>De beste kwaliteit</li>
-                    <li>Vakkundig montage</li>
-                    <li>Draadloos verbinden</li>
-                    <li>Montage voor jouw deur mogelijk</li>
-                    <li>Orignele functies blijven beschikbaar</li>
-                    <li>Half jaar lang gratis omruil en/of geld terug garantie!</li>
+                    <li><Image src={greenCheck} alt="Check icoon"/>Vakkundig montage</li>
+                    <li><Image src={greenCheck} alt="Check icoon"/>Draadloos verbinden</li>
+                    <li><Image src={greenCheck} alt="Check icoon"/>Prijzen zijn inclusief montage</li>
+                    <li><Image src={greenCheck} alt="Check icoon"/>Montage voor jouw deur mogelijk</li>
+                    <li><Image src={greenCheck} alt="Check icoon"/>Gratis omruil en geld terug garantie</li>
+                    <li><Image src={greenCheck} alt="Check icoon"/>Orignele functies blijven beschikbaar</li>
                 </ul>
 
-                <select defaultValue="">
-                    <option value="" disabled>
-                        Selecteer een model...
-                    </option>
+                <div className={styles.producticons}>
+                    <Image src={draadloosIco} alt="Draadloos verbinden"/>
+                    <Image src={montagebijuIco} alt="Montage mogelijk bij u"/>
+                    <Image src={garantieIco} alt="Garantie inbegrepen"/>
+                    <Image src={betalingIco} alt="Betalen na installatie"/>
+                </div>
+
+                <select onChange={checkOpties} defaultValue="">
+                    <option value="" disabled>Selecteer een model...</option>
                     {modellen.map((model, index) => (
                         <option key={index} value={model.naam}>
                         {model.naam} ({model.bouwjaren})
@@ -120,10 +161,56 @@ export default function AKlasse() {
                     ))}
                 </select>
 
+                <div className={styles.prijzen}>
+                    <p className="beschibaarheidtitel displaynone">Beschikbaar voor uw gekozen model:</p>
+
+                    <div className="beschikbareoptie1 displaynone">
+                        <span>Optie 1:</span>
+                        <p></p><p></p>
+                    </div>
+
+                    <div className="beschikbareoptie2 displaynone">
+                        <span>Optie 2:</span>
+                        <p></p><p></p>
+                    </div>
+                </div>
+
+                <button onClick={maakAfspraak}>Maak afspraak</button>
+
             </div>
         </div>    
 
       </div>
+
+        <div className={`${styles.afspraak} afspraakcontainer displaynone`} onClick={e => e.target === e.currentTarget && e.currentTarget.classList.toggle("displaynone")}>
+            <Image src={closeIco} alt="Sluiten icoon"/>
+            <div>
+                <h2>Hoe wilt u ons bereiken?</h2>
+                <ul>
+                <li>
+                    <Link target="_blank" href="https://api.whatsapp.com/send/?phone=31657836190" title="WhatsApp">
+                    <Image src={whatsappIco} alt="Logo van WhatsApp" /> WhatsApp
+                    </Link>
+                </li>
+                <li>
+                    <Link target="_blank" href="mailto:info@autodraadloos.nl" title="E-Mail">
+                    <Image src={mailIco} alt="Mail icoon" /> E-Mail
+                    </Link>
+                </li>
+                <li>
+                    <Link target="_blank" href="/offerte" title="Offerte formulier">
+                    <Image src={offerteIco} alt="Offerte icoon" /> Offerte formulier
+                    </Link>
+                </li>
+                </ul>
+                <section>
+                    <p>U kunt ons ook bellen op:</p>
+                    <p>06 57 83 61 90</p>
+                </section>
+            </div>
+        </div>
+
+
     </>
   );
 }
