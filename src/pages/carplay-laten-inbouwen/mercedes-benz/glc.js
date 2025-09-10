@@ -26,44 +26,100 @@ export default function Glc() {
 
   const modellen = [
     {
-        bouwjaren: "Bouwjaren: 2004 t/m 2012",
-        naam: "GLC W169",
+        bouwjaren: "Bouwjaren: 2015 t/m 2019",
+        naam: "GLC X253",
     },
-    {
-        bouwjaren: "Bouwjaren: 2012 t/m 2018",
-        naam: "GLC W176",
-    },
-    {
-        bouwjaren: "Bouwjaren: 2018 t/m heden",
-        naam: "GLC W177"
-    }
   ];
 
 
-  const images = [
+const images = [
   {
-    original: "/mercedes/GLC/w176-1.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/GLC/w176-1.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
+    original: "/mercedes/c-klasse-glc/1-w205-x253.png",
+    originalAlt: "Apple CarPlay op het originele scherm van een C-Klasse",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/c-klasse-glc/1-w205-x253.png",
+    thumbnailAlt: "Apple CarPlay op het originele scherm van een C-Klasse",
+    thumbnailTitle: "Apple CarPlay",
   },
   {
-    original: "/mercedes/GLC/w176-2.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/GLC/w176-2.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
+    original: "/mercedes/c-klasse-glc/2-w205-x253.png",
+    originalAlt: "Apple CarPlay op het originele scherm van een GLC",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/c-klasse-glc/2-w205-x253.png",
+    thumbnailAlt: "Apple CarPlay op het originele scherm van een GLC",
+    thumbnailTitle: "Apple CarPlay",
   },
   {
-    original:  "/mercedes/GLC/w176-3-groterscherm.jpeg",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail:  "/mercedes/GLC/w176-3-groterscherm.jpeg",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
+    original: "/mercedes/c-klasse-glc/3-w205-x253.png",
+    originalAlt: "Apple CarPlay op het originele scherm van een C-Klasse",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/c-klasse-glc/3-w205-x253.png",
+    thumbnailAlt: "Apple CarPlay op het originele scherm van een C-Klasse",
+    thumbnailTitle: "Apple CarPlay",
+  },
+  {
+    original: "/mercedes/c-klasse-glc/4-w205-x253.png",
+    originalAlt: "Apple CarPlay op een groter scherm van een C-Klasse",
+    originalTitle: "Groter scherm",
+    thumbnail: "/mercedes/c-klasse-glc/4-w205-x253.png",
+    thumbnailAlt: "Apple CarPlay op een groter scherm van een C-Klasse",
+    thumbnailTitle: "Groter scherm",
+  },
+  {
+    original: "/mercedes/c-klasse-glc/5-w205-x253.png",
+    originalAlt: "Vergelijking van een groter en kleiner origineel scherm",
+    originalTitle: "Groter scherm",
+    thumbnail: "/mercedes/c-klasse-glc/5-w205-x253.png",
+    thumbnailAlt: "Vergelijking van een groter en kleiner origineel scherm",
+    thumbnailTitle: "Groter scherm",
+  },
+  {
+    original: "/mercedes/c-klasse-glc/6-w205-x253.png",
+    originalAlt: "Groter dubbele scherm op een C-Klasse",
+    originalTitle: "Groter dubbele scherm op een C-Klasse",
+    thumbnail: "/mercedes/c-klasse-glc/6-w205-x253.png",
+    thumbnailAlt: "Groter dubbele scherm op een C-Klasse",
+    thumbnailTitle: "Groter dubbele scherm op een C-Klasse",
+  },
+  {
+    original: "/mercedes/c-klasse-glc/7-w205-x253.png",
+    originalAlt: "Apple CarPlay op het originele scherm van een C-Klasse",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/c-klasse-glc/7-w205-x253.png",
+    thumbnailAlt: "Apple CarPlay op het originele scherm van een C-Klasse",
+    thumbnailTitle: "Apple CarPlay",
+  },
+  {
+    original: "/mercedes/c-klasse-glc/8-w205-x253.png",
+    originalAlt: "Apple CarPlay op het originele scherm van een C-Klasse",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/c-klasse-glc/8-w205-x253.png",
+    thumbnailAlt: "Apple CarPlay op het originele scherm van een C-Klasse",
+    thumbnailTitle: "Apple CarPlay",
+  },
+  {
+    original: "/mercedes/c-klasse-glc/9-w205-x253.png",
+    originalAlt: "Apple CarPlay op het originele scherm van een C-Klasse",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/c-klasse-glc/9-w205-x253.png",
+    thumbnailAlt: "Apple CarPlay op het originele scherm van een C-Klasse",
+    thumbnailTitle: "Apple CarPlay",
+  },
+  {
+    original: "/mercedes/c-klasse-glc/10-w205-x253.png",
+    originalAlt: "Apple CarPlay op het originele scherm van een C-Klasse",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/c-klasse-glc/10-w205-x253.png",
+    thumbnailAlt: "Apple CarPlay op het originele scherm van een C-Klasse",
+    thumbnailTitle: "Apple CarPlay",
+  },
+  {
+    original: "/mercedes/c-klasse-glc/11-w205-x253.png",
+    originalAlt: "Apple CarPlay op het originele scherm van een GLC",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/c-klasse-glc/11-w205-x253.png",
+    thumbnailAlt: "Apple CarPlay op het originele scherm van een GLC",
+    thumbnailTitle: "Apple CarPlay",
   },
 ];
 
@@ -72,14 +128,7 @@ function checkOpties(e) {
     const gekozenModel = e.target.value;
 
     const opties = {
-        "GLC W169": [
-            { 
-                tekst: "Nieuwe groter scherm + Apple CarPlay en Android Auto", 
-                prijs: "€ 450,-" 
-            }
-        ],
-
-        "GLC W176": [
+        "GLC X253": [
             { 
                 tekst: "Apple CarPlay en Android Auto op het originele scherm", 
                 prijs: "€ 300,-" 
@@ -87,13 +136,6 @@ function checkOpties(e) {
             { 
                 tekst: "Nieuwe groter scherm + Apple CarPlay en Android Auto", 
                 prijs: "Vanaf € 800,-" 
-            }
-        ],
-
-        "GLC W177": [
-            { 
-                tekst: "Apple CarPlay en Android Auto op het originele scherm", 
-                prijs: "€ 500,-" 
             }
         ]
     };

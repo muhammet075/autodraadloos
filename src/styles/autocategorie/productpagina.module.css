@@ -253,7 +253,8 @@
     }
 
     .productpagina > div:nth-of-type(1) > .productgegevens{
-        width: 100%;
+        width: 100vw;
+        margin: 0 0 0 -15px;
         padding: 15px;
     }
 

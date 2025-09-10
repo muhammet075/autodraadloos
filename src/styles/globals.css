@@ -74,7 +74,7 @@ body {
   background-position: 0 40%;
 }
 
-.pagehero-mercedes-benz, .pagehero-portfolio{
+.pagehero-mercedes-benz, .pagehero-portfolio, .pagehero-glc{
   background-image: url("/background/mercedes-benz-bg.jpg");
   background-position: 0 62%;
 }
@@ -82,6 +82,11 @@ body {
 .pagehero-a-klasse{
   background-image: url("/background/w176.png");
   background-position: 0 40%;
+}
+
+.pagehero-c-klasse{
+  background-image: url("/background/w205.png");
+  background-position: 0 35%;
 }
 /* End pagehero background images */
 

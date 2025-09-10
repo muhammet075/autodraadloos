@@ -41,31 +41,80 @@ export default function Gla() {
 
 
   const images = [
-  {
-    original: "/mercedes/GLA/w176-1.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/GLA/w176-1.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original: "/mercedes/GLA/w176-2.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/GLA/w176-2.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original:  "/mercedes/GLA/w176-3-groterscherm.jpeg",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail:  "/mercedes/GLA/w176-3-groterscherm.jpeg",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
+    {
+    original: "/mercedes/a-b-cla-gla-klasse/carplay-1.png",
+    originalAlt: "Apple CarPlay in een CLA",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/a-b-cla-gla-klasse/carplay-1.png",
+    thumbnailAlt: "Apple CarPlay in een CLA",
+    thumbnailTitle: "Apple CarPlay",
+    },
+    {
+    original: "/mercedes/a-b-cla-gla-klasse/carplay-2.png",
+    originalAlt: "Apple CarPlay in een GLA",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/a-b-cla-gla-klasse/carplay-2.png",
+    thumbnailAlt: "Apple CarPlay in een GLA",
+    thumbnailTitle: "Apple CarPlay",
+    },
+    {
+    original: "/mercedes/a-b-cla-gla-klasse/carplay-3.png",
+    originalAlt: "Apple CarPlay in een A-Klasse",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/a-b-cla-gla-klasse/carplay-3.png",
+    thumbnailAlt: "Apple CarPlay in een A-Klasse",
+    thumbnailTitle: "Apple CarPlay",
+    },
+    {
+    original: "/mercedes/a-b-cla-gla-klasse/carplay-4.png",
+    originalAlt: "Groter scherm met Apple CarPlay in een A-Klasse",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/a-b-cla-gla-klasse/carplay-4.png",
+    thumbnailAlt: "Groter scherm met Apple CarPlay in een A-Klasse",
+    thumbnailTitle: "Apple CarPlay",
+    },
+    {
+    original: "/mercedes/a-b-cla-gla-klasse/carplay-5.png",
+    originalAlt: "Apple CarPlay in een GLA",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/a-b-cla-gla-klasse/carplay-5.png",
+    thumbnailAlt: "Apple CarPlay in een GLA",
+    thumbnailTitle: "Apple CarPlay",
+    },
+    {
+    original: "/mercedes/a-b-cla-gla-klasse/carplay-6.png",
+    originalAlt: "Apple CarPlay in een A-Klasse",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/a-b-cla-gla-klasse/carplay-6.png",
+    thumbnailAlt: "Apple CarPlay in een A-Klasse",
+    thumbnailTitle: "Apple CarPlay",
+    },
+    {
+    original: "/mercedes/a-b-cla-gla-klasse/carplay-7.png",
+    originalAlt: "Apple CarPlay in een CLA",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/a-b-cla-gla-klasse/carplay-7.png",
+    thumbnailAlt: "Apple CarPlay in een CLA",
+    thumbnailTitle: "Apple CarPlay",
+    },
+    {
+    original: "/mercedes/a-b-cla-gla-klasse/carplay-8.png",
+    originalAlt: "Apple CarPlay uitleg",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/a-b-cla-gla-klasse/carplay-8.png",
+    thumbnailAlt: "Apple CarPlay uitleg",
+    thumbnailTitle: "Apple CarPlay",
+    },
+    {
+    original: "/mercedes/a-b-cla-gla-klasse/carplay-9.png",
+    originalAlt: "Apple CarPlay uitleg",
+    originalTitle: "Apple CarPlay",
+    thumbnail: "/mercedes/a-b-cla-gla-klasse/carplay-9.png",
+    thumbnailAlt: "Apple CarPlay uitleg",
+    thumbnailTitle: "Apple CarPlay",
+    },
 ];
+
 
 
 function checkOpties(e) {
