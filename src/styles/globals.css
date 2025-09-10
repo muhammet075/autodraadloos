@@ -74,7 +74,7 @@ body {
   background-position: 0 40%;
 }
 
-.pagehero-mercedes-benz, .pagehero-portfolio, .pagehero-glc{
+.pagehero-mercedes-benz, .pagehero-portfolio, .pagehero-b-klasse, .pagehero-cla, .pagehero-cls, .pagehero-glc, .pagehero-gla, .pagehero-gle, .pagehero-glk, .pagehero-gls, .pagehero-s-klasse, .pagehero-sprinter, .pagehero-v-klasse, .pagehero-vito{
   background-image: url("/background/mercedes-benz-bg.jpg");
   background-position: 0 62%;
 }
@@ -87,6 +87,11 @@ body {
 .pagehero-c-klasse{
   background-image: url("/background/w205.png");
   background-position: 0 35%;
+}
+
+.pagehero-e-klasse{
+  background-image: url("/background/w212.png");
+  background-position: 0 50%;
 }
 /* End pagehero background images */
 

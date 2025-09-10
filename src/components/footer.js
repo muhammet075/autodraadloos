@@ -78,14 +78,14 @@ function Footer() {
 
           <ul>
             <li><h2>Populaire automerken</h2></li>
-            <li><Link href="/mercedes-benz-a-klasse-carplay">Mercedes-Benz A-Klasse CarPlay</Link></li>
-            <li><Link href="/mercedes-benz-b-klasse-carplay">Mercedes-Benz B-Klasse CarPlay</Link></li>
-            <li><Link href="/mercedes-benz-c-klasse-carplay">Mercedes-Benz C-Klasse CarPlay</Link></li>
-            <li><Link href="/mercedes-benz-cla-klasse-carplay">Mercedes-Benz CLA-Klasse CarPlay</Link></li>
-            <li><Link href="/mercedes-benz-glc-klasse-carplay">Mercedes-Benz GLC-Klasse CarPlay</Link></li>
-            <li><Link href="/mercedes-benz-gla-klasse-carplay">Mercedes-Benz GLA-Klasse CarPlay</Link></li>
-            <li><Link href="/mercedes-benz-e-klasse-carplay">Mercedes-Benz E-Klasse CarPlay</Link></li>
-            <li><Link href="/mercedes-benz-v-klasse-carplay">Mercedes-Benz V-Klasse CarPlay</Link></li>
+            <li><Link href="/carplay-laten-inbouwen/mercedes-benz/a-klasse/">Mercedes-Benz A-Klasse CarPlay</Link></li>
+            <li><Link href="/carplay-laten-inbouwen/mercedes-benz/b-klasse/">Mercedes-Benz B-Klasse CarPlay</Link></li>
+            <li><Link href="/carplay-laten-inbouwen/mercedes-benz/c-klasse/">Mercedes-Benz C-Klasse CarPlay</Link></li>
+            <li><Link href="/carplay-laten-inbouwen/mercedes-benz/cla/">Mercedes-Benz CLA CarPlay</Link></li>
+            <li><Link href="/carplay-laten-inbouwen/mercedes-benz/glc/">Mercedes-Benz GLC CarPlay</Link></li>
+            <li><Link href="/carplay-laten-inbouwen/mercedes-benz/gla/">Mercedes-Benz GLA CarPlay</Link></li>
+            <li><Link href="/carplay-laten-inbouwen/mercedes-benz/e-klasse/">Mercedes-Benz E-Klasse CarPlay</Link></li>
+            <li><Link href="/carplay-laten-inbouwen/mercedes-benz/v-klasse/">Mercedes-Benz V-Klasse CarPlay</Link></li>
           </ul>
 
           </div>
