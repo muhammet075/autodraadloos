@@ -16,7 +16,7 @@ import offerteIco from "@/assets/icons/offerte.svg";
 import mailIco from "@/assets/icons/mail.svg";
 import closeIco from "@/assets/icons/close.svg";
 
-export default function AKlasse() {
+export default function CKlasse() {
   useEffect(() => {
   });
 
@@ -26,42 +26,38 @@ export default function AKlasse() {
 
   const modellen = [
     {
-        bouwjaren: "Bouwjaren: 2004 t/m 2012",
-        naam: "A-Klasse W169",
+        bouwjaren: "Bouwjaren: 2008 t/m 2014",
+        naam: "C-Klasse W204",
     },
     {
-        bouwjaren: "Bouwjaren: 2012 t/m 2018",
-        naam: "A-Klasse W176",
+        bouwjaren: "Bouwjaren: 2015 t/m 2019",
+        naam: "C-Klasse W205",
     },
-    {
-        bouwjaren: "Bouwjaren: 2018 t/m heden",
-        naam: "A-Klasse W177"
-    }
   ];
 
 
   const images = [
   {
-    original: "/mercedes/a-klasse/w176-1.png",
+    original: "/mercedes/C-Klasse/w176-1.png",
     originalAlt: "yok",
     originalTitle: "",
-    thumbnail: "/mercedes/a-klasse/w176-1.png",
+    thumbnail: "/mercedes/C-Klasse/w176-1.png",
     thumbnailAlt: "",
     thumbnailTitle: "",
   },
   {
-    original: "/mercedes/a-klasse/w176-2.png",
+    original: "/mercedes/C-Klasse/w176-2.png",
     originalAlt: "yok",
     originalTitle: "",
-    thumbnail: "/mercedes/a-klasse/w176-2.png",
+    thumbnail: "/mercedes/C-Klasse/w176-2.png",
     thumbnailAlt: "",
     thumbnailTitle: "",
   },
   {
-    original:  "/mercedes/a-klasse/w176-3-groterscherm.jpeg",
+    original:  "/mercedes/C-Klasse/w176-3-groterscherm.jpeg",
     originalAlt: "yok",
     originalTitle: "",
-    thumbnail:  "/mercedes/a-klasse/w176-3-groterscherm.jpeg",
+    thumbnail:  "/mercedes/C-Klasse/w176-3-groterscherm.jpeg",
     thumbnailAlt: "",
     thumbnailTitle: "",
   },
@@ -72,14 +68,18 @@ function checkOpties(e) {
     const gekozenModel = e.target.value;
 
     const opties = {
-        "A-Klasse W169": [
+        "C-Klasse W204": [
+            { 
+                tekst: "Apple CarPlay en Android Auto op het originele scherm", 
+                prijs: "€ 400,-" 
+            },
             { 
                 tekst: "Nieuwe groter scherm + Apple CarPlay en Android Auto", 
-                prijs: "€ 450,-" 
+                prijs: "Vanaf € 900,-" 
             }
         ],
 
-        "A-Klasse W176": [
+        "C-Klasse W205": [
             { 
                 tekst: "Apple CarPlay en Android Auto op het originele scherm", 
                 prijs: "€ 300,-" 
@@ -89,13 +89,6 @@ function checkOpties(e) {
                 prijs: "Vanaf € 800,-" 
             }
         ],
-
-        "A-Klasse W177": [
-            { 
-                tekst: "Apple CarPlay en Android Auto op het originele scherm", 
-                prijs: "€ 500,-" 
-            }
-        ]
     };
 
     document.querySelector(".beschibaarheidtitel").classList.remove("displaynone");
@@ -113,17 +106,17 @@ function checkOpties(e) {
   return (
     <>
         <Head>
-            <title>AutoDraadloos.nl | Mercedes-Benz A-Klasse CarPlay & Android Auto</title>
-            <meta name="description" content="Laat Apple CarPlay & Android Auto professioneel inbouwen in uw Mercedes-Benz A-Klasse bij AutoDraadloos.nl. Snelle installatie, kwaliteit gegarandeerd."/>
-            <meta name="keywords" content="Mercedes-Benz A-Klasse, W169, W176, W177, CarPlay, Android Auto, auto installatie, AutoDraadloos, autoradio, scherm"/>
-            <meta property="og:title" content="AutoDraadloos.nl | CarPlay & Android Auto voor Mercedes-Benz A-Klasse"/>
-            <meta property="og:description" content="Professionele installatie van Apple CarPlay & Android Auto voor uw Mercedes-Benz A-Klasse bij AutoDraadloos.nl. Vraag direct een offerte aan."/>
-            <meta property="og:url" content="https://www.autodraadloos.nl/carplay-laten-inbouwen/mercedes-benz/a-klasse/"/>
+            <title>AutoDraadloos.nl | Mercedes-Benz C-Klasse CarPlay & Android Auto</title>
+            <meta name="description" content="Laat Apple CarPlay & Android Auto professioneel inbouwen in uw Mercedes-Benz C-Klasse bij AutoDraadloos.nl. Snelle installatie, kwaliteit gegarandeerd."/>
+            <meta name="keywords" content="Mercedes-Benz C-Klasse, W169, W176, W177, CarPlay, Android Auto, auto installatie, AutoDraadloos, autoradio, scherm"/>
+            <meta property="og:title" content="AutoDraadloos.nl | CarPlay & Android Auto voor Mercedes-Benz C-Klasse"/>
+            <meta property="og:description" content="Professionele installatie van Apple CarPlay & Android Auto voor uw Mercedes-Benz C-Klasse bij AutoDraadloos.nl. Vraag direct een offerte aan."/>
+            <meta property="og:url" content="https://www.autodraadloos.nl/carplay-laten-inbouwen/mercedes-benz/C-Klasse/"/>
             <meta property="og:type" content="website"/>
         </Head>
 
 
-      <Pagehero pagetitle="A-Klasse"/>
+      <Pagehero pagetitle="C-Klasse"/>
 
       <div className={styles.productpagina}>
 
@@ -134,7 +127,7 @@ function checkOpties(e) {
             </div>
 
             <div className={styles.productgegevens}>
-                <h2>Apple CarPlay & Android Auto voor de A-Klasse</h2>
+                <h2>Apple CarPlay & Android Auto voor de C-Klasse</h2>
 
                 <ul>
                     <li><Image src={greenCheck} alt="Check icoon"/>Vakkundig montage</li>
