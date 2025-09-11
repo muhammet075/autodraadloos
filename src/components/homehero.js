@@ -39,9 +39,13 @@ function Homehero() {
             e.target.value = value;
 
         if (value.length === 6){
-            kentekenPlaat.blur();
+            
+            e.target.blur();
+
             kentekenPlaat.classList.add("notouch");
             document.querySelector(".kentekenloadingstate").classList.remove("displaynone");
+            
+
 
             value = value.toUpperCase();
 
