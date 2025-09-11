@@ -407,3 +407,64 @@ button{
     transform: rotate(360deg);
   }
 }
+
+.opencollapse {
+    animation: opencollapse 1s;
+    animation-fill-mode: forwards;
+    max-height: 1000px
+}
+
+.removecollapse {
+    animation: removecollapse .5s;
+    animation-fill-mode: forwards
+}
+
+@keyframes opencollapse {
+    0% {
+        max-height: 0
+    }
+
+    to {
+        max-height: 1000px
+    }
+}
+
+@keyframes removecollapse {
+    0% {
+        max-height: 200px
+    }
+
+    to {
+        max-height: 0
+    }
+}
+
+.rotatearrowback {
+    animation: rotatearrowback .2s;
+    animation-fill-mode: forwards
+}
+
+@keyframes rotatearrowback {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(180deg)
+    }
+}
+
+.rotatearrow {
+    animation: rotatearrow .2s;
+    animation-fill-mode: forwards
+}
+
+@keyframes rotatearrow {
+    0% {
+        transform: rotate(180deg)
+    }
+
+    to {
+        transform: rotate(0)
+    }
+}

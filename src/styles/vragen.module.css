@@ -1,5 +1,136 @@
-.vragen{
+.faq{
     max-width: 1250px;
     margin: 0 auto;
     padding: 0 15px;    
 }
+
+.faq > div{
+    max-width: 1250px;
+    margin: 50px 15px;
+}
+
+.faq > div > p:first-child{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.faq > div > h2{
+    font-size: 2.3em;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 25px;
+    max-width: 400px;
+}
+
+.faq > div > section p{
+    margin: 30px 0 5px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.faq > div > section a{
+    display: block;
+    color: #ecab13;
+    text-decoration: underline;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+}
+
+.faq > div > div{
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.faq > div > div > section{
+    background: var(--background2);
+    border-right: 0.5px solid #a0a0a0;
+    border-left: 0.5px solid #a0a0a0;
+    border-bottom: 0.5px solid #a0a0a0;
+    overflow: hidden;
+}
+
+.faq > div > div > section:first-child{
+    border-top: 0.5px solid #a0a0a0;
+}
+
+.faq > div > div > section button{
+    font-family: "Poppins";
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    height: 60px;
+    padding-left: 40px;
+    text-align: initial;
+    background: none;
+    border: none;
+    position: relative;
+}
+
+.faq > div > div > section button:hover{
+    color: var(--donkerPaars);
+    transition: 0.3s ease;
+}
+
+.faq > div > div > section button span:first-child{
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid var(--donkerPaars);    
+    transform: rotate(180deg);
+}
+
+.faq > div > div > section button:hover span:first-child{
+    border-top: 6px solid var(--lichtPaars);    
+    transition: 0.3s ease;
+}
+
+.faq > div > div > section div{
+    list-style: none;
+    max-height: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq > div > div > section div p{
+    margin: 15px 30px 30px 30px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.faq > div > div > section div p b{
+    font-weight: 600;
+}
+
+.faq > div > div > section div p a{
+    color: var(--donkerPaars);
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+    .faq > div > div > section button{
+        font-size: 0.8em;
+        padding-right: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .faq > div > h2{
+        font-size: 2em;
+        max-width: 80%;
+    }
+}
+
