@@ -18,6 +18,7 @@ export default function Home() {
         <meta property="og:description" content="AutoDraadloos biedt professionele installatie van Apple CarPlay & Android Auto voor uw auto. Vraag direct informatie of een offerte aan."/>
         <meta property="og:url" content="https://www.autodraadloos.nl/"/>
         <meta property="og:type" content="website"/>
+        <link rel="preload" as="image" href="/carplay-laten-inbouwen/mercedes-benz/a-klasse.png"/>
       </Head>
 
       <Homehero/>
