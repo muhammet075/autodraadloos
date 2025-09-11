@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import styles from "@/styles/carplay-inbouwen.module.css";
+import styles from "@/styles/pages/carplay-inbouwen.module.css";
 import Pagehero from "@/components/pagehero";
 
 export default function WordtAanGewerkt() {

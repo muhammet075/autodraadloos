@@ -15,6 +15,8 @@ import whatsappIco from "@/assets/icons/whatsapp.svg";
 import offerteIco from "@/assets/icons/offerte.svg";
 import mailIco from "@/assets/icons/mail.svg";
 import closeIco from "@/assets/icons/close.svg";
+import Diensten from "@/components/diensten";
+import Waarom from "@/components/waarom";
 
 export default function Vito() {
   useEffect(() => {
@@ -210,7 +212,9 @@ function checkOpties(e) {
             </div>
         </div>
 
-
+        <Diensten/>
+        <Waarom/>
+        
     </>
   );
 }

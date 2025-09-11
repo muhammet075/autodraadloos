@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "@/styles/pages/home.module.css";
 import Homehero from "@/components/homehero.js";
+import Waarom from "@/components/waarom";
 
 export default function Home() {
   useEffect(() => {
@@ -22,6 +23,7 @@ export default function Home() {
       </Head>
 
       <Homehero/>
+      <Waarom/>
 
       <div className={styles.home}>
       </div>
