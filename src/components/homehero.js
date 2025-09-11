@@ -17,7 +17,6 @@ function Homehero() {
             "mercedes-benz-cls.png",
             "mercedes-benz-a-klasse.png",
             "mercedes-benz-cla.png",
-            "mercedes-benz-e-klasse.png",
             "mercedes-benz-gla.png",
             "mercedes-benz-glc.png",
             "mercedes-benz-c-klasse.png"
@@ -150,6 +149,7 @@ function Homehero() {
                         </div>
                     </section>
                     <section>
+                        <div><span></span><p>Of</p><span></span></div>
                         <Link href="/carplay-laten-inbouwen" title="Zoeken">Zoek handmatig<Image src={zoekIco} alt="Navigeren icoon"/></Link>
                     </section>
                 </div>

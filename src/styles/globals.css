@@ -237,6 +237,17 @@ button{
     color: red;
 }
 
+@media only screen and (max-width: 450px) {
+  .kentekenplaat.errorstate::after{
+      height: fit-content;
+      top: 104px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 11px;        
+  }
+}
+
 
 .kentekeninput.errorstate{
   border: 2px solid red !important;

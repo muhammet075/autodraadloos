@@ -100,6 +100,10 @@
     margin: 0 0 5px 0;
 }
 
+.kenteken > section:nth-of-type(2) > div{
+    display: none;
+}
+
 .kenteken > section:nth-of-type(2) > a{
     display: flex;
     align-items: center;
@@ -233,6 +237,7 @@
 .popup > div{
     width: 450px;
     height: auto;
+    margin: 0 15px;
     padding: 25px;
     background-color: #ffff;
     border-radius: 10px;
@@ -327,6 +332,19 @@
     .sterkepunten > ul > li:last-child{
         display: none;
     }
+
+    .kenteken{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .kenteken > section:nth-of-type(2) > a{
+        font-size: 13px;
+    }
+
+    .kenteken > section:nth-of-type(2) > a > img{
+        width: 12px;
+    }
 }
 
 @media only screen and (max-width: 830px) {
@@ -354,7 +372,7 @@
     .herotop{
         display: flex;
         flex-direction: column-reverse;
-        padding: 0 0 25px 0;
+        padding: 0;
     }
 
     .herotop > section:nth-of-type(1){
@@ -386,6 +404,54 @@
     }
 }
 
+@media only screen and (max-width: 610px) {
+    .kenteken{
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .kenteken > section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .kenteken > section:nth-of-type(1) > p{
+        margin: 0 0 10px 0;
+        font-size: 13px;
+    }
+
+    .kenteken > section:nth-of-type(2) > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin: 25px 0;
+        width: 100%;
+    }
+
+    .kenteken > section:nth-of-type(2) > div > p{
+        text-transform: uppercase;
+        color: #7b7b7b;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .kenteken > section:nth-of-type(2) > div > span{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #d5d5d5;
+    }
+
+    .kenteken > section:nth-of-type(2) > a{
+        margin: 0 auto 25px auto;
+    }
+}
+
 @media only screen and (max-width: 550px) {
     .herotop > section:nth-of-type(1){
         width: 100%;
@@ -396,4 +462,134 @@
         width: 80%;
         margin-top: -65px;
     }
+
+    .sterkepunten > ul{
+        gap: 15px;
+    }
+
+    .sterkepunten > ul > li{
+        font-size: 11px;
+        width: 100%;
+        padding: 3px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .kenteken{
+        position: relative;
+    }
+
+    .kenteken .kentekeninput{
+        position: static;
+    }
+
+    .kenteken .kentekeninput > div:nth-of-type(2){
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #000000b3;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+    }
+
+    .kenteken .kentekeninput > div:nth-of-type(2) > span{
+        width: 60px;
+        height: 60px;
+        border: 6px solid #ffff;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+    }
+}
+
+
+@media only screen and (max-width: 440px) {
+    .herotop > section:nth-of-type(1) > h1{
+        font-size: 22px;
+    }
+
+    .herotop > section:nth-of-type(1) > h2{
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .sterkepunten > ul > li{
+        justify-content: flex-start;
+        padding: 3px 5px 3px 8px;
+        font-size: 10px;
+    }
+
+    .sterkepunten > ul > li > img{
+        width: 15px;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .herotop > section:nth-of-type(1) > h1{
+        font-size: 20px;
+    }
+
+    .herotop > section:nth-of-type(1) > h2{
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .sterkepunten > ul{
+        margin: 25px 0;
+    }
+
+    .sterkepunten > ul > li{
+        justify-content: flex-start;
+        font-size: 8px;
+    }
+
+    .sterkepunten > ul > li > img{
+        width: 12px;
+    }
+
+    .kenteken > section:nth-of-type(1) > p{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .herotop > section:nth-of-type(2){
+        margin-top: -40px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .sterkepunten > ul > li{
+        justify-content: flex-start;
+        font-size: 7px;
+    }
+
+    .sterkepunten > ul > li > img{
+        width: 11px;
+    }
+
+    .kenteken > section:nth-of-type(1) > p{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .herotop > section:nth-of-type(2){
+        margin-top: -20px;
+    }
+
+    .herotop > section:nth-of-type(1) > h2{
+        margin: 0 0 25px 0;
+    }
+
+    .sterkepunten > ul{
+        display: none;
+    } 
 }
