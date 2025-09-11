@@ -125,7 +125,7 @@ function Homehero() {
                         <h2>Ontdek de mogelijkheden om Apple CarPlay en Android Auto in uw auto te laten installeren</h2>
                     </section>
                     <section>
-                        <img id="homehero-auto"/>
+                        <img id="homehero-auto" src="/carplay-laten-inbouwen/mercedes-benz/a-klasse/" alt="Mercedes-Benz auto"/>
                     </section>
                 </div>
 
