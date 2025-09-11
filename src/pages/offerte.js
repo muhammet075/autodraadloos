@@ -44,6 +44,7 @@ useEffect(() => {
     document.querySelector(".kentekeninput").classList.remove("errorstate");
 
     if (e.target.value.length === 6) {
+      e.target.blur();
       sessionStorage.setItem("kentekenIngevuld", "true");
       sessionStorage.setItem("invoerKenteken", value);
       document.querySelector(".kentekenloadingstate").classList.remove("displaynone");
