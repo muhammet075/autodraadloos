@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Pagehero from "@/components/pagehero";
-import styles from "@/styles/offerte.module.css";
+import styles from "@/styles/pages/offerte.module.css";
 import euFlag from "@/assets/icons/eu-flag.svg";
 import keus1 from "@/assets/img/keus1.png";
 import keus2 from "@/assets/img/keus2.png";

@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/instagramfeed.module.css";
+import styles from "@/styles/components/instagramfeed.module.css";
 import instagramLogo from "@/assets/icons/instagram.svg";
 
 function Instagramfeed() {

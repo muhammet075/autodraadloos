@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import styles from "@/styles/pagehero.module.css";
+import styles from "@/styles/components/pagehero.module.css";
 
 function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1).replace(/-/g, " ");

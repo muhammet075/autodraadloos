@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/homehero.module.css";
+import styles from "@/styles/components/homehero.module.css";
 import euFlag from "@/assets/icons/eu-flag.svg";
 import closeIco from "@/assets/icons/close.svg";
 import zoekIco from "@/assets/icons/next-white.svg";

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import styles from "@/styles/home.module.css";
+import styles from "@/styles/pages/home.module.css";
 import Homehero from "@/components/homehero.js";
 
 export default function Home() {

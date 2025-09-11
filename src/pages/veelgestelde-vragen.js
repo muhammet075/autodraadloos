@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import styles from "@/styles/vragen.module.css";
+import styles from "@/styles/pages/vragen.module.css";
 import Pagehero from "@/components/pagehero";
 
 export default function veelgesteldeVragen() {

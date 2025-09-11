@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/header.module.css";
+import styles from "@/styles/components/header.module.css";
 import Logo from "@/assets/logo/autodraadloos-logo.svg";
 import hamburgerIco from "@/assets/icons/hamburger.svg";
 import closeIco from "@/assets/icons/close.svg";

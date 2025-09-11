@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 import Pagehero from "@/components/pagehero";
-import styles from "@/styles/contact.module.css";
+import styles from "@/styles/pages/contact.module.css";
 import emailjs from "@emailjs/browser";
 import checkIco from "@/assets/icons/greencheck.svg";
 import Instagram from "@/assets/icons/instagram2.svg";

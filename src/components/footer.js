@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "@/styles/footer.module.css";
+import styles from "@/styles/components/footer.module.css";
 import Logo from "@/assets/logo/autodraadloos-rond-logo.svg";
 import Altinweb from "@/assets/logo/altinweb-logo.svg";
 import Instagram from "@/assets/icons/instagram2.svg";
