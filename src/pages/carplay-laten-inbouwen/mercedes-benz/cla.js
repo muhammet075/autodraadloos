@@ -17,6 +17,7 @@ import mailIco from "@/assets/icons/mail.svg";
 import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
+import claImg from "@/assets/mercedes/mercedes-benz-cla.png";
 
 export default function Cla() {
   useEffect(() => {
@@ -28,17 +29,9 @@ export default function Cla() {
 
   const modellen = [
     {
-        bouwjaren: "Bouwjaren: 2004 t/m 2012",
-        naam: "CLA W169",
+        bouwjaren: "Bouwjaren: 2012 t/m 2019",
+        naam: "CLA C117 / W117",
     },
-    {
-        bouwjaren: "Bouwjaren: 2012 t/m 2018",
-        naam: "CLA W176",
-    },
-    {
-        bouwjaren: "Bouwjaren: 2018 t/m heden",
-        naam: "CLA W177"
-    }
   ];
 
 
@@ -122,14 +115,7 @@ function checkOpties(e) {
     const gekozenModel = e.target.value;
 
     const opties = {
-        "CLA W169": [
-            { 
-                tekst: "Nieuwe groter scherm + Apple CarPlay en Android Auto", 
-                prijs: "€ 450,-" 
-            }
-        ],
-
-        "CLA W176": [
+        "CLA C117 / W117": [
             { 
                 tekst: "Apple CarPlay en Android Auto op het originele scherm", 
                 prijs: "€ 300,-" 
@@ -139,13 +125,6 @@ function checkOpties(e) {
                 prijs: "Vanaf € 800,-" 
             }
         ],
-
-        "CLA W177": [
-            { 
-                tekst: "Apple CarPlay en Android Auto op het originele scherm", 
-                prijs: "€ 500,-" 
-            }
-        ]
     };
 
     document.querySelector(".beschibaarheidtitel").classList.remove("displaynone");
@@ -260,8 +239,38 @@ function checkOpties(e) {
             </div>
         </div>
 
-        <Diensten/>
+        <div className={styles.seo}>
+            <div>
+                <section>
+                    <h2>Apple CarPlay en Android Auto Mercedes CLA C117 / W117</h2>
+                    <p>Wilt u uw Mercedes-Benz CLA C117 / W117 voorzien van Apple CarPlay en Android Auto? Zo kunt u uw smartphone eenvoudig gebruiken via het originele scherm van uw auto.</p>
+                    <p>Met CarPlay en Android Auto navigeert u makkelijk, luistert u muziek en bekijkt u berichten tijdens het rijden, terwijl alle originele functies van uw CLA behouden blijven.</p>
+                    <h3>CarPlay installatie op het originele scherm</h3>
+                    <p>Onze monteurs bouwen Apple CarPlay en Android Auto direct in op het originele scherm van uw CLA C117 / W117. Uw menu, achteruitrijcamera en andere functies blijven volledig intact.</p>
+                    <p>De installatie is professioneel en snel, inclusief draadloze Bluetooth-verbinding en een extra USB-aansluiting voor kabelverbinding.</p>
+                </section>
+                <section>
+                    <Image src={claImg} alt="Mercedes-Benz CLA C117 / W117" title="CLA C117 / W117"/>
+                </section>
+            </div>
+
+            <div>
+                <section>
+                    <h2>Groot Android scherm installatie CLA C117 / W117</h2>
+                    <p>Wilt u een groter en moderner scherm in uw Mercedes CLA C117 / W117? Wij kunnen een luxe Android-scherm inbouwen dat compatibel is met Apple CarPlay en Android Auto.</p>
+                    <p>Het scherm geeft een duidelijk overzicht en toegang tot apps zoals YouTube, Netflix en NPO, terwijl alle originele functies van uw auto blijven werken.</p>
+                    <h3>CLA C117 / W117 groter scherm installeren</h3>
+                    <p>Onze specialisten installeren het scherm vakkundig, zodat het volledig samenwerkt met uw bestaande systeem. Zo geniet u van een moderne rijervaring zonder problemen.</p>
+                    <p>Extra opties, zoals een dashcam aansluiten, zijn mogelijk en de beelden kunnen direct op het nieuwe scherm bekeken worden.</p>
+                </section>
+                <section>
+                    <img src="/carplay-screenshot.png" alt="Screenshot van Apple CarPlay"/>
+                </section>
+            </div>
+        </div>
+
         <Waarom/>
+        <Diensten/>
 
     </>
   );

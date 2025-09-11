@@ -243,6 +243,90 @@
     font-weight: 600;
 }
 
+
+
+
+
+
+
+
+
+
+.seo{
+    max-width: 1250px;
+    margin: 100px auto;
+    padding: 50px 35px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.seo > div{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.seo > div > section{
+    margin: 0 0 50px 0;
+}
+
+.seo > div > section > h2{
+    font-size: 23px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 5px 0;
+}
+
+.seo > div > section > h3{
+    font-size: 21px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 25px 0 5px 0;
+}
+
+.seo > div > section > p{
+    font-size: 14px;
+}
+
+.seo > div > section > img{
+    width: 400px;
+    height: auto;
+}
+
+.seo > div:nth-of-type(2) > section > img{
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+
+
+
+@media only screen and (max-width: 870px) {
+    .seo{
+        padding: 15px;
+    }
+    
+    .seo > div{
+        flex-direction: column-reverse;
+        gap: 25px;
+        margin: 0 0 50px 0;
+    }
+
+    .seo > div:last-child{
+        margin: 0;
+    }
+    
+    .seo > div > section{
+        margin: 0 0 25px 0;
+    }
+
+    .seo > div > section > img{
+        margin: 0 auto;
+        display: block;
+        width: 60%;
+    }
+}
+
 @media only screen and (max-width: 770px) {
     .productpagina > div:nth-of-type(1){
         flex-direction: column;
@@ -280,5 +364,9 @@
 
     .productpagina > div:nth-of-type(1) > .productgegevens > .prijzen > div > p:nth-of-type(2){
         font-size: 14px;
+    }
+
+    .seo > div > section > img{
+        width: 90%;
     }
 }

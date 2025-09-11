@@ -17,6 +17,7 @@ import mailIco from "@/assets/icons/mail.svg";
 import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
+import gleImg from "@/assets/mercedes/mercedes-benz-gle.png";
 
 export default function Gle() {
   useEffect(() => {
@@ -28,17 +29,13 @@ export default function Gle() {
 
   const modellen = [
     {
-        bouwjaren: "Bouwjaren: 2004 t/m 2012",
-        naam: "GLE W169",
+        bouwjaren: "Bouwjaren: 2006 t/m 2011",
+        naam: "GLE W164",
     },
     {
-        bouwjaren: "Bouwjaren: 2012 t/m 2018",
-        naam: "GLE W176",
+        bouwjaren: "Bouwjaren: 2012 t/m 2019",
+        naam: "GLE W166 / C292",
     },
-    {
-        bouwjaren: "Bouwjaren: 2018 t/m heden",
-        naam: "GLE W177"
-    }
   ];
 
 
@@ -74,14 +71,14 @@ function checkOpties(e) {
     const gekozenModel = e.target.value;
 
     const opties = {
-        "GLE W169": [
+        "GLE W164": [
             { 
                 tekst: "Nieuwe groter scherm + Apple CarPlay en Android Auto", 
                 prijs: "€ 450,-" 
             }
         ],
 
-        "GLE W176": [
+        "GLE W166 / C292": [
             { 
                 tekst: "Apple CarPlay en Android Auto op het originele scherm", 
                 prijs: "€ 300,-" 
@@ -212,8 +209,40 @@ function checkOpties(e) {
             </div>
         </div>
 
-        <Diensten/>
+
+        <div className={styles.seo}>
+            <div>
+                <section>
+                    <h2>Apple CarPlay en Android Auto voor de GLE W166 / C292</h2>
+                    <p>Wilt u uw Mercedes-Benz GLE W166 / C292 voorzien van Apple CarPlay en Android Auto? Zo kunt u uw smartphone eenvoudig gebruiken via het originele scherm van uw auto.</p>
+                    <p>Met deze upgrade navigeert u makkelijk, luistert u muziek en bekijkt u berichten tijdens het rijden, terwijl alle originele functies van uw GLE behouden blijven.</p>
+                    <h3>CarPlay inbouwen op het originele scherm</h3>
+                    <p>Onze specialisten installeren Apple CarPlay en Android Auto direct op het originele scherm van uw GLE W166 / C292. Uw menu, achteruitrijcamera en andere functies blijven volledig werken.</p>
+                    <p>De installatie gebeurt professioneel en snel, inclusief draadloze Bluetooth-verbinding en een extra USB-aansluiting voor kabelverbinding.</p>
+                </section>
+                <section>
+                    <Image src={gleImg} alt="Mercedes-Benz GLE W166 / C292" title="GLE W166 / C292"/>
+                </section>
+            </div>
+
+            <div>
+                <section>
+                    <h2>Groot Android scherm voor de GLE W166 / C292</h2>
+                    <p>Wilt u een moderner en groter scherm in uw Mercedes GLE W166 / C292? Wij kunnen een luxe Android-scherm inbouwen dat volledig compatibel is met Apple CarPlay en Android Auto.</p>
+                    <p>Het scherm geeft een overzichtelijk display en toegang tot apps zoals YouTube, Netflix en NPO, terwijl alle originele functies behouden blijven.</p>
+                    <h3>Installatie van het grotere scherm in GLE W166 / C292</h3>
+                    <p>Onze monteurs installeren het scherm vakkundig, zodat het perfect samenwerkt met uw bestaande systeem. Zo geniet u van een moderne en comfortabele rijervaring.</p>
+                    <p>Extra opties zoals een dashcam aansluiten zijn ook mogelijk, waarbij de beelden direct op het nieuwe scherm bekeken kunnen worden.</p>
+                </section>
+                <section>
+                    <img src="/carplay-screenshot.png" alt="Screenshot van Apple CarPlay"/>
+                </section>
+            </div>
+        </div>
+
+
         <Waarom/>
+        <Diensten/>
         
     </>
   );

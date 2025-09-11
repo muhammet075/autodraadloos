@@ -17,6 +17,7 @@ import mailIco from "@/assets/icons/mail.svg";
 import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
+import glsImg from "@/assets/mercedes/mercedes-benz-gls.png";
 
 export default function Gls() {
   useEffect(() => {
@@ -28,17 +29,13 @@ export default function Gls() {
 
   const modellen = [
     {
-        bouwjaren: "Bouwjaren: 2004 t/m 2012",
-        naam: "GLS W169",
+        bouwjaren: "Bouwjaren: 2006 t/m 2012",
+        naam: "GLS X164",
     },
     {
-        bouwjaren: "Bouwjaren: 2012 t/m 2018",
-        naam: "GLS W176",
+        bouwjaren: "Bouwjaren: 2012 t/m 2019",
+        naam: "GLS X166",
     },
-    {
-        bouwjaren: "Bouwjaren: 2018 t/m heden",
-        naam: "GLS W177"
-    }
   ];
 
 
@@ -74,14 +71,14 @@ function checkOpties(e) {
     const gekozenModel = e.target.value;
 
     const opties = {
-        "GLS W169": [
+        "GLS X164": [
             { 
                 tekst: "Nieuwe groter scherm + Apple CarPlay en Android Auto", 
                 prijs: "€ 450,-" 
             }
         ],
 
-        "GLS W176": [
+        "GLS X166": [
             { 
                 tekst: "Apple CarPlay en Android Auto op het originele scherm", 
                 prijs: "€ 300,-" 
@@ -91,13 +88,6 @@ function checkOpties(e) {
                 prijs: "Vanaf € 800,-" 
             }
         ],
-
-        "GLS W177": [
-            { 
-                tekst: "Apple CarPlay en Android Auto op het originele scherm", 
-                prijs: "€ 500,-" 
-            }
-        ]
     };
 
     document.querySelector(".beschibaarheidtitel").classList.remove("displaynone");
@@ -212,8 +202,38 @@ function checkOpties(e) {
             </div>
         </div>
 
-        <Diensten/>
+        <div className={styles.seo}>
+            <div>
+                <section>
+                    <h2>Apple CarPlay en Android Auto voor de GLS X166</h2>
+                    <p>Wilt u uw Mercedes-Benz GLS X166 upgraden met Apple CarPlay en Android Auto? Zo kunt u uw smartphone eenvoudig gebruiken via het originele scherm van uw auto.</p>
+                    <p>Tijdens het rijden kunt u makkelijk navigeren, muziek luisteren en berichten bekijken, terwijl alle originele functies van uw GLS behouden blijven.</p>
+                    <h3>CarPlay installeren op het originele scherm</h3>
+                    <p>Onze specialisten bouwen Apple CarPlay en Android Auto direct in op het originele scherm van uw GLS X166. Het menu, de achteruitrijcamera en andere functies blijven volledig beschikbaar.</p>
+                    <p>De installatie gebeurt professioneel en snel, inclusief draadloze Bluetooth-verbinding en een extra USB-aansluiting voor kabelverbinding.</p>
+                </section>
+                <section>
+                    <Image src={glsImg} alt="Mercedes-Benz GLS X166" title="GLS X166"/>
+                </section>
+            </div>
+
+            <div>
+                <section>
+                    <h2>Groot Android scherm voor uw GLS X166</h2>
+                    <p>Wilt u een groter en moderner scherm in uw Mercedes GLS X166? Wij kunnen een luxe Android-scherm inbouwen dat volledig compatibel is met Apple CarPlay en Android Auto.</p>
+                    <p>Het scherm biedt een overzichtelijk display en toegang tot apps zoals YouTube, Netflix en NPO, terwijl alle originele functies van uw auto behouden blijven.</p>
+                    <h3>GLS X166 groter scherm installeren</h3>
+                    <p>Onze monteurs installeren het scherm vakkundig, zodat het perfect samenwerkt met uw bestaande systeem. Zo geniet u van een moderne en comfortabele rijervaring.</p>
+                    <p>Extra opties zoals een dashcam aansluiten zijn mogelijk, waarbij de beelden direct op het nieuwe scherm bekeken kunnen worden.</p>
+                </section>
+                <section>
+                    <img src="/carplay-screenshot.png" alt="Screenshot van Apple CarPlay"/>
+                </section>
+            </div>
+        </div>
+
         <Waarom/>
+        <Diensten/>
         
     </>
   );

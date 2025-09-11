@@ -17,6 +17,7 @@ import mailIco from "@/assets/icons/mail.svg";
 import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
+import glcImg from "@/assets/mercedes/mercedes-benz-glc.png";
 
 export default function Glc() {
   useEffect(() => {
@@ -29,7 +30,7 @@ export default function Glc() {
   const modellen = [
     {
         bouwjaren: "Bouwjaren: 2015 t/m 2019",
-        naam: "GLC X253",
+        naam: "GLC X253 / C253",
     },
   ];
 
@@ -130,7 +131,7 @@ function checkOpties(e) {
     const gekozenModel = e.target.value;
 
     const opties = {
-        "GLC X253": [
+        "GLC X253 / C253": [
             { 
                 tekst: "Apple CarPlay en Android Auto op het originele scherm", 
                 prijs: "€ 300,-" 
@@ -254,9 +255,41 @@ function checkOpties(e) {
             </div>
         </div>
 
-        <Diensten/>
+
+      <div className={styles.seo}>
+          <div>
+              <section>
+                  <h2>Apple CarPlay en Android Auto voor de GLC X253 / C253</h2>
+                  <p>Wilt u uw Mercedes-Benz GLC X253 / C253 upgraden met Apple CarPlay en Android Auto? Zo kunt u uw smartphone eenvoudig gebruiken via het originele scherm van uw auto.</p>
+                  <p>Met deze upgrade navigeert u makkelijk, luistert u muziek en bekijkt u berichten tijdens het rijden, terwijl alle originele functies van uw GLC behouden blijven.</p>
+                  <h3>CarPlay inbouwen op het originele scherm</h3>
+                  <p>Onze monteurs installeren Apple CarPlay en Android Auto direct op het originele scherm van uw GLC X253 / C253. Het menu, de achteruitrijcamera en andere functies blijven volledig beschikbaar.</p>
+                  <p>De installatie is professioneel en snel, inclusief draadloze Bluetooth-verbinding en een extra USB-aansluiting voor kabelgebruik.</p>
+              </section>
+              <section>
+                  <Image src={glcImg} alt="Mercedes-Benz GLC X253 / C253" title="GLC X253 / C253"/>
+              </section>
+          </div>
+
+          <div>
+              <section>
+                  <h2>Groot Android scherm voor uw GLC X253 / C253</h2>
+                  <p>Wilt u een groter en moderner scherm in uw Mercedes GLC X253 / C253? Wij kunnen een luxe Android-scherm inbouwen dat volledig compatibel is met Apple CarPlay en Android Auto.</p>
+                  <p>Het grotere scherm geeft een overzichtelijk display en toegang tot apps zoals YouTube, Netflix en NPO, terwijl alle originele functies behouden blijven.</p>
+                  <h3>Installatie van het grotere scherm in GLC X253 / C253</h3>
+                  <p>Onze specialisten installeren het scherm vakkundig, zodat alles perfect werkt met uw bestaande systeem. Zo geniet u van een moderne en comfortabele rijervaring.</p>
+                  <p>Extra opties zoals het koppelen van een dashcam zijn mogelijk, waarbij de beelden direct op het nieuwe scherm bekeken kunnen worden.</p>
+              </section>
+              <section>
+                  <img src="/carplay-screenshot.png" alt="Screenshot van Apple CarPlay"/>
+              </section>
+          </div>
+      </div>
+
+
         <Waarom/>
-        
+        <Diensten/>
+       
     </>
   );
 }

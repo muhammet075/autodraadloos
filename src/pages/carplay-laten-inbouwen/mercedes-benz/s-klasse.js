@@ -17,6 +17,7 @@ import mailIco from "@/assets/icons/mail.svg";
 import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
+import sKlasseImg from "@/assets/mercedes/mercedes-benz-s-klasse.png";
 
 export default function SKlasse() {
   useEffect(() => {
@@ -28,16 +29,16 @@ export default function SKlasse() {
 
   const modellen = [
     {
-        bouwjaren: "Bouwjaren: 2004 t/m 2012",
-        naam: "S-Klasse W169",
+        bouwjaren: "Bouwjaren: 2000 t/m 2006",
+        naam: "S-Klasse W220",
     },
     {
-        bouwjaren: "Bouwjaren: 2012 t/m 2018",
-        naam: "S-Klasse W176",
+        bouwjaren: "Bouwjaren: 2006 t/m 2013",
+        naam: "S-Klasse W221",
     },
     {
-        bouwjaren: "Bouwjaren: 2018 t/m heden",
-        naam: "S-Klasse W177"
+        bouwjaren: "Bouwjaren: 2013 t/m 2020",
+        naam: "S-Klasse W222"
     }
   ];
 
@@ -74,14 +75,14 @@ function checkOpties(e) {
     const gekozenModel = e.target.value;
 
     const opties = {
-        "S-Klasse W169": [
+        "S-Klasse W220": [
             { 
                 tekst: "Nieuwe groter scherm + Apple CarPlay en Android Auto", 
                 prijs: "€ 450,-" 
             }
         ],
 
-        "S-Klasse W176": [
+        "S-Klasse W221": [
             { 
                 tekst: "Apple CarPlay en Android Auto op het originele scherm", 
                 prijs: "€ 300,-" 
@@ -92,7 +93,7 @@ function checkOpties(e) {
             }
         ],
 
-        "S-Klasse W177": [
+        "S-Klasse W222": [
             { 
                 tekst: "Apple CarPlay en Android Auto op het originele scherm", 
                 prijs: "€ 500,-" 
@@ -212,8 +213,38 @@ function checkOpties(e) {
             </div>
         </div>
 
-        <Diensten/>
+        <div className={styles.seo}>
+            <div>
+                <section>
+                    <h2>Apple CarPlay en Android Auto voor de S-Klasse W221</h2>
+                    <p>Wilt u uw Mercedes-Benz S-Klasse W221 upgraden met Apple CarPlay en Android Auto? Zo kunt u uw smartphone eenvoudig gebruiken via het originele scherm van uw auto.</p>
+                    <p>U kunt tijdens het rijden makkelijk navigeren, muziek luisteren en berichten bekijken, terwijl alle originele functies van uw S-Klasse behouden blijven.</p>
+                    <h3>CarPlay installeren op het originele scherm</h3>
+                    <p>Onze specialisten bouwen Apple CarPlay en Android Auto direct in op het originele scherm van uw S-Klasse W221. Het menu, de achteruitrijcamera en andere functies blijven volledig beschikbaar.</p>
+                    <p>De installatie gebeurt snel en professioneel, inclusief draadloze Bluetooth-verbinding en een extra USB-aansluiting voor kabelgebruik.</p>
+                </section>
+                <section>
+                    <Image src={sKlasseImg} alt="Mercedes-Benz S-Klasse W221" title="S-Klasse W221"/>
+                </section>
+            </div>
+
+            <div>
+                <section>
+                    <h2>Groot Android scherm voor de S-Klasse W221</h2>
+                    <p>Wilt u een groter en moderner scherm in uw Mercedes S-Klasse W221? Wij kunnen een luxe Android-scherm inbouwen dat volledig compatibel is met Apple CarPlay en Android Auto.</p>
+                    <p>Het scherm biedt een overzichtelijk display en toegang tot apps zoals YouTube, Netflix en NPO, terwijl alle originele functies behouden blijven.</p>
+                    <h3>S-Klasse W221 groter scherm installeren</h3>
+                    <p>Onze monteurs installeren het scherm professioneel, zodat het perfect werkt met uw bestaande systeem. Zo geniet u van een moderne en comfortabele rijervaring.</p>
+                    <p>Extra opties zoals het koppelen van een dashcam zijn mogelijk, waarbij de beelden direct op het nieuwe scherm bekeken kunnen worden.</p>
+                </section>
+                <section>
+                    <img src="/carplay-screenshot.png" alt="Screenshot van Apple CarPlay"/>
+                </section>
+            </div>
+        </div>
+
         <Waarom/>
+        <Diensten/>
         
     </>
   );

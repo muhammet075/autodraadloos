@@ -17,6 +17,8 @@ import mailIco from "@/assets/icons/mail.svg";
 import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
+import eKlasseImg from "@/assets/mercedes/mercedes-benz-e-klasse.png";
+
 
 export default function EKlasse() {
   useEffect(() => {
@@ -28,16 +30,16 @@ export default function EKlasse() {
 
   const modellen = [
     {
-        bouwjaren: "Bouwjaren: 2004 t/m 2012",
-        naam: "E-Klasse W169",
+        bouwjaren: "Bouwjaren: 2001 t/m 2009",
+        naam: "E-Klasse W211",
     },
     {
-        bouwjaren: "Bouwjaren: 2012 t/m 2018",
-        naam: "E-Klasse W176",
+        bouwjaren: "Bouwjaren: 2009 t/m 2015",
+        naam: "E-Klasse W212",
     },
     {
-        bouwjaren: "Bouwjaren: 2018 t/m heden",
-        naam: "E-Klasse W177"
+        bouwjaren: "Bouwjaren: 2009 t/m 2016",
+        naam: "E-Klasse C207 Coupe/Cabrio"
     }
   ];
 
@@ -74,14 +76,14 @@ function checkOpties(e) {
     const gekozenModel = e.target.value;
 
     const opties = {
-        "E-Klasse W169": [
+        "E-Klasse W211": [
             { 
                 tekst: "Nieuwe groter scherm + Apple CarPlay en Android Auto", 
                 prijs: "€ 450,-" 
             }
         ],
 
-        "E-Klasse W176": [
+        "E-Klasse W212": [
             { 
                 tekst: "Apple CarPlay en Android Auto op het originele scherm", 
                 prijs: "€ 300,-" 
@@ -92,10 +94,14 @@ function checkOpties(e) {
             }
         ],
 
-        "E-Klasse W177": [
+        "E-Klasse C207 Coupe/Cabrio": [
             { 
                 tekst: "Apple CarPlay en Android Auto op het originele scherm", 
-                prijs: "€ 500,-" 
+                prijs: "€ 300,-" 
+            },
+            { 
+                tekst: "Nieuwe groter scherm + Apple CarPlay en Android Auto", 
+                prijs: "Vanaf € 800,-" 
             }
         ]
     };
@@ -212,8 +218,39 @@ function checkOpties(e) {
             </div>
         </div>
 
-        <Diensten/>
+
+        <div className={styles.seo}>
+            <div>
+                <section>
+                    <h2>Apple CarPlay en Android Auto Mercedes E-Klasse W212</h2>
+                    <p>Wilt u uw Mercedes-Benz E-Klasse W212 voorzien van Apple CarPlay en Android Auto? Zo kunt u uw smartphone eenvoudig gebruiken via het originele scherm van uw auto.</p>
+                    <p>U kunt veilig navigeren, muziek luisteren en berichten bekijken tijdens het rijden, terwijl alle originele functies van uw E-Klasse behouden blijven.</p>
+                    <h3>CarPlay installeren op het originele scherm</h3>
+                    <p>Onze specialisten bouwen Apple CarPlay en Android Auto direct in op het originele scherm van uw E-Klasse W212. Het menu, de achteruitrijcamera en andere functies blijven volledig werken.</p>
+                    <p>De installatie is snel en professioneel, inclusief draadloze Bluetooth-verbinding en een extra USB-aansluiting voor kabelverbinding met uw smartphone.</p>
+                </section>
+                <section>
+                    <Image src={eKlasseImg} alt="Mercedes-Benz E-Klasse W212" title="E-Klasse W212"/>
+                </section>
+            </div>
+
+            <div>
+                <section>
+                    <h2>Groot Android scherm installatie E-Klasse W212</h2>
+                    <p>Wilt u een groter en moderner scherm in uw Mercedes E-Klasse W212? Wij kunnen een luxe Android-scherm inbouwen dat volledig compatibel is met Apple CarPlay en Android Auto.</p>
+                    <p>Het scherm geeft een duidelijk overzicht en toegang tot apps zoals YouTube, Netflix en NPO, terwijl alle originele functies van uw auto behouden blijven.</p>
+                    <h3>E-Klasse W212 groter scherm installeren</h3>
+                    <p>Onze monteurs installeren het scherm vakkundig, zodat alles direct samenwerkt met uw bestaande systeem. Zo geniet u van een moderne en veilige rijervaring.</p>
+                    <p>Extra opties zoals een dashcam aansluiten zijn ook mogelijk, waarbij de beelden direct op het nieuwe scherm bekeken kunnen worden.</p>
+                </section>
+                <section>
+                    <img src="/carplay-screenshot.png" alt="Screenshot van Apple CarPlay"/>
+                </section>
+            </div>
+        </div>
+
         <Waarom/>
+        <Diensten/>
 
     </>
   );

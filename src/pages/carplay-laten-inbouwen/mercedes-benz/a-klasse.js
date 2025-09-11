@@ -17,6 +17,7 @@ import mailIco from "@/assets/icons/mail.svg";
 import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
+import aKlasseImg from "@/assets/mercedes/mercedes-benz-a-klasse.png";
 
 export default function AKlasse() {
   useEffect(() => {
@@ -260,8 +261,41 @@ function checkOpties(e) {
             </div>
         </div>
 
-        <Diensten/>
+
+
+        <div className={styles.seo}>
+            <div>
+                <section>
+                    <h2>Apple CarPlay en Android Auto voor Mercedes A-Klasse W176</h2>
+                    <p>Wilt u uw Mercedes-Benz A-Klasse W176 upgraden met de modernste connectiviteit? Met Apple CarPlay en Android Auto kunt u eenvoudig uw smartphone verbinden met het originele scherm van uw auto.</p>
+                    <p>Zo kunt u veilig navigeren, muziek afspelen en berichten bekijken terwijl u rijdt, allemaal via het scherm van uw auto en zonder dat de originele functies verloren gaan.</p>
+                    <h3>CarPlay installatie op het originele scherm</h3>
+                    <p>Onze specialisten bouwen Apple CarPlay en Android Auto naadloos in op het originele scherm van uw A-Klasse W176. Uw achteruitrijcamera, menu en andere functies blijven volledig behouden.</p>
+                    <p>De installatie kan snel en vakkundig uitgevoerd worden, inclusief draadloze verbinding via Bluetooth en een optionele USB-aansluiting voor kabelverbinding.</p>
+                </section>
+                <section>
+                    <Image src={aKlasseImg} alt="Mercedes-Benz A-Klasse W176" title="A-Klasse W176"/>
+                </section>
+            </div>
+
+            <div>
+                <section>
+                    <h2>Android scherm installatie A-Klasse W176</h2>
+                    <p>Wilt u een groter en moderner scherm in uw Mercedes A-Klasse W176 in plaats uw huidige kleine schermpje? Wij kunnen een luxe Android-scherm inbouwen dat compatibel is met Apple CarPlay en Android Auto.</p>
+                    <p>Met dit scherm krijgt u een overzichtelijker display, toegang tot apps zoals YouTube, Netflix en NPO, en behoudt u alle originele functies van uw auto.</p>
+                    <h3>A-Klasse W176 groter scherm installatie</h3>
+                    <p>Onze experts installeren het grotere scherm professioneel in uw auto, zodat alles naadloos werkt met het originele systeem. Zo kunt u genieten van een moderne rijervaring zonder concessies.</p>
+                    <p>Extra opties zoals het koppelen van een dashcam zijn eenvoudig mogelijk, waarbij de beelden direct op het nieuwe scherm te bekijken zijn.</p>
+                </section>
+                <section>
+                    <img src="/carplay-screenshot.png" alt="Screenshot van Apple CarPlay"/>
+                </section>
+            </div>
+        </div>
+
+
         <Waarom/>
+        <Diensten/>
         
     </>
   );

@@ -17,6 +17,7 @@ import mailIco from "@/assets/icons/mail.svg";
 import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
+import clsImg from "@/assets/mercedes/mercedes-benz-cls.png";
 
 export default function Cls() {
   useEffect(() => {
@@ -28,16 +29,12 @@ export default function Cls() {
 
   const modellen = [
     {
-        bouwjaren: "Bouwjaren: 2004 t/m 2012",
-        naam: "CLS W169",
+        bouwjaren: "Bouwjaren: 2003 t/m 2010",
+        naam: "CLS W219",
     },
     {
-        bouwjaren: "Bouwjaren: 2012 t/m 2018",
-        naam: "CLS W176",
-    },
-    {
-        bouwjaren: "Bouwjaren: 2018 t/m heden",
-        naam: "CLS W177"
+        bouwjaren: "Bouwjaren: 2010 t/m 2017",
+        naam: "CLS W218",
     }
   ];
 
@@ -74,14 +71,14 @@ function checkOpties(e) {
     const gekozenModel = e.target.value;
 
     const opties = {
-        "CLS W169": [
+        "CLS W219": [
             { 
                 tekst: "Nieuwe groter scherm + Apple CarPlay en Android Auto", 
                 prijs: "€ 450,-" 
             }
         ],
 
-        "CLS W176": [
+        "CLS W218": [
             { 
                 tekst: "Apple CarPlay en Android Auto op het originele scherm", 
                 prijs: "€ 300,-" 
@@ -91,13 +88,6 @@ function checkOpties(e) {
                 prijs: "Vanaf € 800,-" 
             }
         ],
-
-        "CLS W177": [
-            { 
-                tekst: "Apple CarPlay en Android Auto op het originele scherm", 
-                prijs: "€ 500,-" 
-            }
-        ]
     };
 
     document.querySelector(".beschibaarheidtitel").classList.remove("displaynone");
@@ -212,9 +202,39 @@ function checkOpties(e) {
             </div>
         </div>
 
-        <Diensten/>
+        <div className={styles.seo}>
+            <div>
+                <section>
+                    <h2>Apple CarPlay en Android Auto voor de CLS W218 / C218</h2>
+                    <p>Wilt u uw Mercedes-Benz CLS W218 / C218 moderniseren met Apple CarPlay en Android Auto? Zo kunt u uw smartphone makkelijk gebruiken via het originele scherm van uw auto.</p>
+                    <p>Met CarPlay en Android Auto navigeert u eenvoudig, luistert u muziek en bekijkt u berichten tijdens het rijden, terwijl alle originele functies van uw CLS behouden blijven.</p>
+                    <h3>CarPlay installatie op het originele scherm</h3>
+                    <p>Onze monteurs bouwen Apple CarPlay en Android Auto direct in op het originele scherm van uw CLS W218 / C218. Uw menu, achteruitrijcamera en andere functies blijven volledig beschikbaar.</p>
+                    <p>De installatie is professioneel en snel, inclusief draadloze Bluetooth-verbinding en een extra USB-aansluiting voor kabelverbinding.</p>
+                </section>
+                <section>
+                    <Image src={clsImg} alt="Mercedes-Benz CLS W218 / C218" title="CLS W218 / C218"/>
+                </section>
+            </div>
+
+            <div>
+                <section>
+                    <h2>Groot Android scherm installatie CLS W218 / C218</h2>
+                    <p>Wilt u een groter en moderner scherm in uw Mercedes CLS W218 / C218? Wij kunnen een luxe Android-scherm inbouwen dat compatibel is met Apple CarPlay en Android Auto.</p>
+                    <p>Het scherm geeft een overzichtelijk display en toegang tot apps zoals YouTube, Netflix en NPO, terwijl alle originele functies van uw auto behouden blijven.</p>
+                    <h3>CLS W218 / C218 groter scherm installeren</h3>
+                    <p>Onze specialisten installeren het scherm vakkundig, zodat het volledig werkt met uw bestaande systeem. Zo geniet u van een moderne en veilige rijervaring zonder problemen.</p>
+                    <p>Extra opties, zoals het koppelen van een dashcam, zijn mogelijk, waarbij de beelden direct op het nieuwe scherm bekeken kunnen worden.</p>
+                </section>
+                <section>
+                    <img src="/carplay-screenshot.png" alt="Screenshot van Apple CarPlay"/>
+                </section>
+            </div>
+        </div>
+
         <Waarom/>
-        
+        <Diensten/>
+
     </>
   );
 }

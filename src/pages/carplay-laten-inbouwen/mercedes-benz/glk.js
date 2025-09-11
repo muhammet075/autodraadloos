@@ -17,6 +17,7 @@ import mailIco from "@/assets/icons/mail.svg";
 import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
+import glkImg from "@/assets/mercedes/mercedes-benz-glk.png";
 
 export default function Glk() {
   useEffect(() => {
@@ -28,17 +29,9 @@ export default function Glk() {
 
   const modellen = [
     {
-        bouwjaren: "Bouwjaren: 2004 t/m 2012",
-        naam: "GLK W169",
+        bouwjaren: "Bouwjaren: 2008 t/m 2015",
+        naam: "GLK X204",
     },
-    {
-        bouwjaren: "Bouwjaren: 2012 t/m 2018",
-        naam: "GLK W176",
-    },
-    {
-        bouwjaren: "Bouwjaren: 2018 t/m heden",
-        naam: "GLK W177"
-    }
   ];
 
 
@@ -74,14 +67,7 @@ function checkOpties(e) {
     const gekozenModel = e.target.value;
 
     const opties = {
-        "GLK W169": [
-            { 
-                tekst: "Nieuwe groter scherm + Apple CarPlay en Android Auto", 
-                prijs: "€ 450,-" 
-            }
-        ],
-
-        "GLK W176": [
+        "GLK X204": [
             { 
                 tekst: "Apple CarPlay en Android Auto op het originele scherm", 
                 prijs: "€ 300,-" 
@@ -91,13 +77,6 @@ function checkOpties(e) {
                 prijs: "Vanaf € 800,-" 
             }
         ],
-
-        "GLK W177": [
-            { 
-                tekst: "Apple CarPlay en Android Auto op het originele scherm", 
-                prijs: "€ 500,-" 
-            }
-        ]
     };
 
     document.querySelector(".beschibaarheidtitel").classList.remove("displaynone");
@@ -212,8 +191,40 @@ function checkOpties(e) {
             </div>
         </div>
 
-        <Diensten/>
+
+        <div className={styles.seo}>
+            <div>
+                <section>
+                    <h2>Apple CarPlay en Android Auto voor de GLK X204</h2>
+                    <p>Wilt u uw Mercedes-Benz GLK X204 upgraden met Apple CarPlay en Android Auto? Zo kunt u uw smartphone eenvoudig gebruiken via het originele scherm van uw auto.</p>
+                    <p>U kunt tijdens het rijden makkelijk navigeren, muziek afspelen en berichten bekijken, terwijl alle originele functies van uw GLK intact blijven.</p>
+                    <h3>CarPlay installeren op het originele scherm</h3>
+                    <p>Onze specialisten bouwen Apple CarPlay en Android Auto direct in op het originele scherm van uw GLK X204. Het menu, de achteruitrijcamera en andere functies blijven volledig beschikbaar.</p>
+                    <p>De installatie is snel en professioneel, inclusief draadloze Bluetooth-verbinding en een extra USB-aansluiting voor kabelgebruik.</p>
+                </section>
+                <section>
+                    <Image src={glkImg} alt="Mercedes-Benz GLK X204" title="GLK X204"/>
+                </section>
+            </div>
+
+            <div>
+                <section>
+                    <h2>Groot Android scherm voor uw GLK X204</h2>
+                    <p>Wilt u een groter en moderner scherm in uw Mercedes GLK X204? Wij kunnen een luxe Android-scherm inbouwen dat volledig werkt met Apple CarPlay en Android Auto.</p>
+                    <p>Het grotere scherm geeft een overzichtelijk display en toegang tot apps zoals YouTube, Netflix en NPO, terwijl alle originele functies behouden blijven.</p>
+                    <h3>GLK X204 groter scherm installeren</h3>
+                    <p>Onze monteurs installeren het scherm vakkundig, zodat het direct samenwerkt met uw bestaande systeem. Zo geniet u van een moderne en veilige rijervaring.</p>
+                    <p>Extra opties zoals het koppelen van een dashcam zijn mogelijk, waarbij de beelden direct op het nieuwe scherm bekeken kunnen worden.</p>
+                </section>
+                <section>
+                    <img src="/carplay-screenshot.png" alt="Screenshot van Apple CarPlay"/>
+                </section>
+            </div>
+        </div>
+
+
         <Waarom/>
+        <Diensten/>
         
     </>
   );

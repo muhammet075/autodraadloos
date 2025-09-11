@@ -17,6 +17,7 @@ import mailIco from "@/assets/icons/mail.svg";
 import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
+import bKlasseImg from "@/assets/mercedes/mercedes-benz-b-klasse.png";
 
 export default function BKlasse() {
   useEffect(() => {
@@ -28,17 +29,13 @@ export default function BKlasse() {
 
   const modellen = [
     {
-        bouwjaren: "Bouwjaren: 2004 t/m 2012",
-        naam: "B-Klasse W169",
+        bouwjaren: "Bouwjaren: 2004 t/m 2011",
+        naam: "B-Klasse W245",
     },
     {
         bouwjaren: "Bouwjaren: 2012 t/m 2018",
-        naam: "B-Klasse W176",
+        naam: "B-Klasse W246",
     },
-    {
-        bouwjaren: "Bouwjaren: 2018 t/m heden",
-        naam: "B-Klasse W177"
-    }
   ];
 
 
@@ -123,14 +120,14 @@ function checkOpties(e) {
     const gekozenModel = e.target.value;
 
     const opties = {
-        "B-Klasse W169": [
+        "B-Klasse W245": [
             { 
                 tekst: "Nieuwe groter scherm + Apple CarPlay en Android Auto", 
                 prijs: "€ 450,-" 
             }
         ],
 
-        "B-Klasse W176": [
+        "B-Klasse W246": [
             { 
                 tekst: "Apple CarPlay en Android Auto op het originele scherm", 
                 prijs: "€ 300,-" 
@@ -140,13 +137,6 @@ function checkOpties(e) {
                 prijs: "Vanaf € 800,-" 
             }
         ],
-
-        "B-Klasse W177": [
-            { 
-                tekst: "Apple CarPlay en Android Auto op het originele scherm", 
-                prijs: "€ 500,-" 
-            }
-        ]
     };
 
     document.querySelector(".beschibaarheidtitel").classList.remove("displaynone");
@@ -261,9 +251,39 @@ function checkOpties(e) {
             </div>
         </div>
 
-        <Diensten/>
+        <div className={styles.seo}>
+            <div>
+                <section>
+                    <h2>Apple CarPlay en Android Auto voor de B-Klasse W246</h2>
+                    <p>Wilt u uw Mercedes-Benz B-Klasse W246 moderniseren met Apple CarPlay en Android Auto? Zo kunt u eenvoudig uw smartphone gebruiken via het originele scherm van uw auto.</p>
+                    <p>U kunt veilig navigeren, muziek luisteren en berichten bekijken terwijl u rijdt, zonder dat de bestaande functies van uw B-Klasse verdwijnen.</p>
+                    <h3>CarPlay installatie op het originele scherm</h3>
+                    <p>Onze monteurs bouwen Apple CarPlay en Android Auto direct in op het originele scherm van uw B-Klasse W246. Het menu, de achteruitrijcamera en alle andere functies blijven volledig beschikbaar.</p>
+                    <p>De installatie is snel en professioneel, inclusief draadloze verbinding via Bluetooth en een extra USB-aansluiting voor verbinding met een kabel.</p>
+                </section>
+                <section>
+                    <Image src={bKlasseImg} alt="Mercedes-Benz B-Klasse W246" title="B-Klasse W246"/>
+                </section>
+            </div>
+
+            <div>
+                <section>
+                    <h2>Groot Android scherm installatie B-Klasse W246</h2>
+                    <p>Wilt u een groter en moderner scherm in uw Mercedes B-Klasse W246? Wij kunnen een luxe Android-scherm inbouwen dat volledig werkt met Apple CarPlay en Android Auto.</p>
+                    <p>Het grotere scherm geeft een duidelijker overzicht en toegang tot apps zoals YouTube, Netflix en NPO, terwijl alle originele functies van uw auto behouden blijven.</p>
+                    <h3>B-Klasse W246 groter scherm installeren</h3>
+                    <p>Onze specialisten installeren het scherm professioneel in uw auto, zodat alles direct samenwerkt met uw bestaande systeem. Zo geniet u van een moderne rijervaring zonder problemen.</p>
+                    <p>Extra opties, zoals het koppelen van een dashcam, zijn ook mogelijk, waarbij u de beelden direct op het nieuwe scherm kunt bekijken.</p>
+                </section>
+                <section>
+                    <img src="/carplay-screenshot.png" alt="Screenshot van Apple CarPlay"/>
+                </section>
+            </div>
+        </div>
+
         <Waarom/>
-        
+        <Diensten/>
+
     </>
   );
 }

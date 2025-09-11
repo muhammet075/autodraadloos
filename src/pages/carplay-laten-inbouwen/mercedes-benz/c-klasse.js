@@ -17,6 +17,7 @@ import mailIco from "@/assets/icons/mail.svg";
 import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
+import cKlasseImg from "@/assets/mercedes/mercedes-benz-c-klasse.png";
 
 export default function CKlasse() {
   useEffect(() => {
@@ -269,8 +270,41 @@ function checkOpties(e) {
             </div>
         </div>
 
-        <Diensten/>
+
+        <div className={styles.seo}>
+          <div>
+              <section>
+                  <h2>Apple CarPlay en Android Auto voor de C-Klasse W205</h2>
+                  <p>Wilt u uw Mercedes-Benz C-Klasse W205 upgraden met Apple CarPlay en Android Auto? Zo kunt u uw smartphone makkelijk gebruiken via het originele scherm van uw auto.</p>
+                  <p>U kunt navigeren, muziek luisteren en berichten bekijken terwijl u rijdt, en alle originele functies van uw C-Klasse blijven gewoon werken.</p>
+                  <h3>CarPlay installatie op het originele scherm</h3>
+                  <p>Onze monteurs bouwen Apple CarPlay en Android Auto direct in op het originele scherm van uw C-Klasse W205. Het menu, de achteruitrijcamera en alle andere functies blijven volledig behouden.</p>
+                  <p>De installatie is snel en professioneel, inclusief draadloze verbinding via Bluetooth en een extra USB-aansluiting voor kabelverbinding.</p>
+              </section>
+              <section>
+                  <Image src={cKlasseImg} alt="Mercedes-Benz C-Klasse W205" title="C-Klasse W205"/>
+              </section>
+          </div>
+
+          <div>
+              <section>
+                  <h2>Groot Android scherm installatie C-Klasse W205</h2>
+                  <p>Wilt u een groter en moderner scherm in uw Mercedes C-Klasse W205? Wij kunnen een luxe Android-scherm inbouwen dat volledig werkt met Apple CarPlay en Android Auto.</p>
+                  <p>Het scherm geeft een overzichtelijk display en toegang tot apps zoals YouTube, Netflix en NPO, terwijl alle originele functies behouden blijven.</p>
+                  <h3>C-Klasse W205 groter scherm installeren</h3>
+                  <p>Onze specialisten installeren het scherm professioneel, zodat alles direct werkt met uw bestaande systeem. Zo geniet u van een moderne en veilige rijervaring.</p>
+                  <p>Extra opties zoals het koppelen van een dashcam zijn mogelijk, waarbij de beelden direct op het nieuwe scherm bekeken kunnen worden.</p>
+              </section>
+              <section>
+                  <img src="/carplay-screenshot.png" alt="Screenshot van Apple CarPlay"/>
+              </section>
+          </div>
+      </div>
+
+
+
         <Waarom/>
+        <Diensten/>
 
 
     </>

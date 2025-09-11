@@ -17,6 +17,7 @@ import mailIco from "@/assets/icons/mail.svg";
 import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
+import glaImg from "@/assets/mercedes/mercedes-benz-gla.png";
 
 export default function Gla() {
   useEffect(() => {
@@ -28,17 +29,10 @@ export default function Gla() {
 
   const modellen = [
     {
-        bouwjaren: "Bouwjaren: 2004 t/m 2012",
-        naam: "GLA W169",
+        bouwjaren: "Bouwjaren: 2014 t/m 2020",
+        naam: "GLA X156",
     },
-    {
-        bouwjaren: "Bouwjaren: 2012 t/m 2018",
-        naam: "GLA W176",
-    },
-    {
-        bouwjaren: "Bouwjaren: 2018 t/m heden",
-        naam: "GLA W177"
-    }
+
   ];
 
 
@@ -123,14 +117,7 @@ function checkOpties(e) {
     const gekozenModel = e.target.value;
 
     const opties = {
-        "GLA W169": [
-            { 
-                tekst: "Nieuwe groter scherm + Apple CarPlay en Android Auto", 
-                prijs: "€ 450,-" 
-            }
-        ],
-
-        "GLA W176": [
+        "GLA X156": [
             { 
                 tekst: "Apple CarPlay en Android Auto op het originele scherm", 
                 prijs: "€ 300,-" 
@@ -140,13 +127,6 @@ function checkOpties(e) {
                 prijs: "Vanaf € 800,-" 
             }
         ],
-
-        "GLA W177": [
-            { 
-                tekst: "Apple CarPlay en Android Auto op het originele scherm", 
-                prijs: "€ 500,-" 
-            }
-        ]
     };
 
     document.querySelector(".beschibaarheidtitel").classList.remove("displaynone");
@@ -261,9 +241,39 @@ function checkOpties(e) {
             </div>
         </div>
 
-        <Diensten/>
+        <div className={styles.seo}>
+            <div>
+                <section>
+                    <h2>Apple CarPlay en Android Auto upgrade voor de GLA X156</h2>
+                    <p>Wilt u uw Mercedes-Benz GLA X156 voorzien van Apple CarPlay en Android Auto? Met deze upgrade gebruikt u uw smartphone eenvoudig via het originele scherm van uw auto.</p>
+                    <p>Zo kunt u veilig navigeren, muziek afspelen en berichten ontvangen terwijl u rijdt, zonder dat de originele functies van uw GLA verloren gaan.</p>
+                    <h3>CarPlay inbouwen op het originele scherm</h3>
+                    <p>Onze monteurs installeren Apple CarPlay en Android Auto direct op het originele scherm van uw GLA X156. Uw menu, achteruitrijcamera en overige functies blijven volledig beschikbaar.</p>
+                    <p>De installatie gebeurt snel en vakkundig, inclusief draadloze Bluetooth-verbinding en een optionele USB-aansluiting voor kabelgebruik.</p>
+                </section>
+                <section>
+                    <Image src={glaImg} alt="Mercedes-Benz GLA X156" title="GLA X156"/>
+                </section>
+            </div>
+
+            <div>
+                <section>
+                    <h2>Groot Android scherm upgrade voor uw GLA X156</h2>
+                    <p>Wilt u een moderner en groter scherm in uw Mercedes GLA X156? Wij bouwen een luxe Android-scherm in dat volledig werkt met Apple CarPlay en Android Auto.</p>
+                    <p>Het grotere scherm geeft een duidelijk overzicht en toegang tot apps zoals YouTube, Netflix en NPO, terwijl alle originele functies behouden blijven.</p>
+                    <h3>Installatie van het grotere scherm in GLA X156</h3>
+                    <p>Onze specialisten installeren het scherm professioneel, zodat alles direct werkt met uw bestaande systeem. Zo geniet u van een moderne en comfortabele rijervaring.</p>
+                    <p>Extra opties zoals het koppelen van een dashcam zijn mogelijk, waarbij de beelden direct op het nieuwe scherm bekeken kunnen worden.</p>
+                </section>
+                <section>
+                    <img src="/carplay-screenshot.png" alt="Screenshot van Apple CarPlay"/>
+                </section>
+            </div>
+        </div>
+
         <Waarom/>
-        
+        <Diensten/>
+       
     </>
   );
 }
