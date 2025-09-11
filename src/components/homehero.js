@@ -39,6 +39,7 @@ function Homehero() {
             e.target.value = value;
 
         if (value.length === 6){
+            kentekenPlaat.blur();
             kentekenPlaat.classList.add("notouch");
             document.querySelector(".kentekenloadingstate").classList.remove("displaynone");
 
