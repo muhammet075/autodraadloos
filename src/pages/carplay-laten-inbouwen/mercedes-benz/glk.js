@@ -113,12 +113,12 @@ function checkOpties(e) {
   return (
     <>
         <Head>
-            <title>AutoDraadloos.nl | Mercedes-Benz GLK CarPlay & Android Auto</title>
+            <title>Mercedes GLK Apple CarPlay / Android Auto inbouwen</title>
             <meta name="description" content="Laat Apple CarPlay & Android Auto professioneel inbouwen in uw Mercedes-Benz GLK bij AutoDraadloos.nl. Snelle installatie, kwaliteit gegarandeerd."/>
             <meta name="keywords" content="Mercedes-Benz GLK, W169, W176, W177, CarPlay, Android Auto, auto installatie, AutoDraadloos, autoradio, scherm"/>
             <meta property="og:title" content="AutoDraadloos.nl | CarPlay & Android Auto voor Mercedes-Benz GLK"/>
             <meta property="og:description" content="Professionele installatie van Apple CarPlay & Android Auto voor uw Mercedes-Benz GLK bij AutoDraadloos.nl. Vraag direct een offerte aan."/>
-            <meta property="og:url" content="https://www.autodraadloos.nl/carplay-laten-inbouwen/mercedes-benz/GLK/"/>
+            <meta property="og:url" content="https://www.autodraadloos.nl/carplay-laten-inbouwen/mercedes-benz/glk/"/>
             <meta property="og:type" content="website"/>
         </Head>
 

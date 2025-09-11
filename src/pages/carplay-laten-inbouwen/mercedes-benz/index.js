@@ -48,7 +48,7 @@ export default function MercedesBenz() {
   return (
     <>
       <Head>
-        <title>AutoDraadloos.nl | CarPlay laten inbouwen in Mercedes-Benz</title>
+        <title>Mercedes Apple CarPlay / Android Auto inbouwen, installeren</title>
         <meta name="description" content="Laat Apple CarPlay of Android Auto professioneel inbouwen in uw Mercedes-Benz. AutoDraadloos verzorgt de installatie in diverse Mercedes-modellen met perfecte integratie."/>
         <meta name="keywords" content="Mercedes-Benz CarPlay, Mercedes CarPlay laten inbouwen, Mercedes Android Auto, CarPlay installatie Mercedes, AutoDraadloos"/>
         <meta property="og:title" content="AutoDraadloos.nl | CarPlay & Android Auto voor Mercedes-Benz"/>

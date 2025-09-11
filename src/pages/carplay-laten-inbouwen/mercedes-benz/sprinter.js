@@ -113,12 +113,12 @@ function checkOpties(e) {
   return (
     <>
         <Head>
-            <title>AutoDraadloos.nl | Mercedes-Benz Sprinter CarPlay & Android Auto</title>
+            <title>Mercedes Sprinter Apple CarPlay / Android Auto inbouwen</title>
             <meta name="description" content="Laat Apple CarPlay & Android Auto professioneel inbouwen in uw Mercedes-Benz Sprinter bij AutoDraadloos.nl. Snelle installatie, kwaliteit gegarandeerd."/>
             <meta name="keywords" content="Mercedes-Benz Sprinter, W169, W176, W177, CarPlay, Android Auto, auto installatie, AutoDraadloos, autoradio, scherm"/>
             <meta property="og:title" content="AutoDraadloos.nl | CarPlay & Android Auto voor Mercedes-Benz Sprinter"/>
             <meta property="og:description" content="Professionele installatie van Apple CarPlay & Android Auto voor uw Mercedes-Benz Sprinter bij AutoDraadloos.nl. Vraag direct een offerte aan."/>
-            <meta property="og:url" content="https://www.autodraadloos.nl/carplay-laten-inbouwen/mercedes-benz/Sprinter/"/>
+            <meta property="og:url" content="https://www.autodraadloos.nl/carplay-laten-inbouwen/mercedes-benz/sprinter/"/>
             <meta property="og:type" content="website"/>
         </Head>
 

@@ -155,12 +155,12 @@ function checkOpties(e) {
   return (
     <>
         <Head>
-            <title>AutoDraadloos.nl | Mercedes-Benz GLC CarPlay & Android Auto</title>
+            <title>Mercedes GLC Apple CarPlay / Android Auto inbouwen</title>
             <meta name="description" content="Laat Apple CarPlay & Android Auto professioneel inbouwen in uw Mercedes-Benz GLC bij AutoDraadloos.nl. Snelle installatie, kwaliteit gegarandeerd."/>
             <meta name="keywords" content="Mercedes-Benz GLC, W169, W176, W177, CarPlay, Android Auto, auto installatie, AutoDraadloos, autoradio, scherm"/>
             <meta property="og:title" content="AutoDraadloos.nl | CarPlay & Android Auto voor Mercedes-Benz GLC"/>
             <meta property="og:description" content="Professionele installatie van Apple CarPlay & Android Auto voor uw Mercedes-Benz GLC bij AutoDraadloos.nl. Vraag direct een offerte aan."/>
-            <meta property="og:url" content="https://www.autodraadloos.nl/carplay-laten-inbouwen/mercedes-benz/GLC/"/>
+            <meta property="og:url" content="https://www.autodraadloos.nl/carplay-laten-inbouwen/mercedes-benz/glc/"/>
             <meta property="og:type" content="website"/>
         </Head>
 

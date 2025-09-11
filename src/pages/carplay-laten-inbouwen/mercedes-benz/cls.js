@@ -113,12 +113,12 @@ function checkOpties(e) {
   return (
     <>
         <Head>
-            <title>AutoDraadloos.nl | Mercedes-Benz CLS CarPlay & Android Auto</title>
+            <title>Mercedes CLS Apple CarPlay / Android Auto inbouwen</title>
             <meta name="description" content="Laat Apple CarPlay & Android Auto professioneel inbouwen in uw Mercedes-Benz CLS bij AutoDraadloos.nl. Snelle installatie, kwaliteit gegarandeerd."/>
             <meta name="keywords" content="Mercedes-Benz CLS, W169, W176, W177, CarPlay, Android Auto, auto installatie, AutoDraadloos, autoradio, scherm"/>
             <meta property="og:title" content="AutoDraadloos.nl | CarPlay & Android Auto voor Mercedes-Benz CLS"/>
             <meta property="og:description" content="Professionele installatie van Apple CarPlay & Android Auto voor uw Mercedes-Benz CLS bij AutoDraadloos.nl. Vraag direct een offerte aan."/>
-            <meta property="og:url" content="https://www.autodraadloos.nl/carplay-laten-inbouwen/mercedes-benz/CLS/"/>
+            <meta property="og:url" content="https://www.autodraadloos.nl/carplay-laten-inbouwen/mercedes-benz/cls/"/>
             <meta property="og:type" content="website"/>
         </Head>
 
