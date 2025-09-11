@@ -248,7 +248,7 @@ useEffect(() => {
 
                 <div className={`${styles.kenteken} kentekeninput`}>
                   <div><Image src={euFlag} alt="Europese unie vlag" /><p>NL</p></div>
-                  <input type="text" id="kentekeninputfield" onChange={checkKenteken} maxLength={6}></input>
+                  <input type="text" placeholder="XX000X" id="kentekeninputfield" onChange={checkKenteken} maxLength={6}></input>
                   <p id="kentekenmerk"></p>
                 </div>
 

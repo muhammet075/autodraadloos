@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import styles from "@/styles/home.module.css";
+import Homehero from "@/components/homehero.js";
 
 export default function Home() {
   useEffect(() => {
@@ -19,11 +20,9 @@ export default function Home() {
         <meta property="og:type" content="website"/>
       </Head>
 
+      <Homehero/>
+
       <div className={styles.home}>
-        <h1>Nieuwe website in aanbouw</h1>
-        <p>De nieuwe website van AutoDraadloos wordt gebouwd! Wilt u Apple CarPlay / Android Auto in uw voertuig?</p><br/>
-        <p>Klik hieronder om een offerte voor uw voertuig te krijgen.</p>
-        <Link href="/offerte">Offerte</Link>
       </div>
     </>
   );

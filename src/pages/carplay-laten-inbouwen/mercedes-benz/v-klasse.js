@@ -142,7 +142,7 @@ function checkOpties(e) {
                     <li><Image src={greenCheck} alt="Check icoon"/>Prijzen zijn inclusief montage</li>
                     <li><Image src={greenCheck} alt="Check icoon"/>Montage voor jouw deur mogelijk</li>
                     <li><Image src={greenCheck} alt="Check icoon"/>Gratis omruil en geld terug garantie</li>
-                    <li><Image src={greenCheck} alt="Check icoon"/>Orignele functies blijven beschikbaar</li>
+                    <li><Image src={greenCheck} alt="Check icoon"/>Originele functies blijven beschikbaar</li>
                 </ul>
 
                 <div className={styles.producticons}>

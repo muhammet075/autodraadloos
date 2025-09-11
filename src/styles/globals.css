@@ -119,6 +119,10 @@ textarea{
   font-family: "Poppins";
 }
 
+.notouch{
+  pointer-events: none !important;
+}
+
 @media only screen and (max-width: 600px) {
   h2{
     font-size: 22px;
@@ -216,6 +220,21 @@ button{
     height: 15px;
     font-size: 10px;
   }
+}
+
+
+.kentekenplaat.errorstate{
+  border: 2px solid red !important;
+}
+
+.kentekenplaat.errorstate::after{
+    content: "Vul een geldig kenteken in.";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: red;
 }
 
 
