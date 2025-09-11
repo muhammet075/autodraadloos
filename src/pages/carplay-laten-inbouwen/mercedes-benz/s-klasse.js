@@ -45,28 +45,12 @@ export default function SKlasse() {
 
   const images = [
   {
-    original: "/mercedes/S-Klasse/w176-1.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/S-Klasse/w176-1.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original: "/mercedes/S-Klasse/w176-2.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/S-Klasse/w176-2.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original:  "/mercedes/S-Klasse/w176-3-groterscherm.jpeg",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail:  "/mercedes/S-Klasse/w176-3-groterscherm.jpeg",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
+    original: "/mercedes/s-klasse/w221-1.avif",
+    originalAlt: "Apple CarPlay W221 S-klasse",
+    originalTitle: "Apple CarPlay W221 S-klasse",
+    thumbnail: "/mercedes/s-klasse/w221-1.avif",
+    thumbnailAlt: "Apple CarPlay W221 S-klasse",
+    thumbnailTitle: "Apple CarPlay W221 S-klasse",
   },
 ];
 

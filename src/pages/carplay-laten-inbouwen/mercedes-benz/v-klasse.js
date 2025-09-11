@@ -41,30 +41,15 @@ export default function VKlasse() {
 
   const images = [
   {
-    original: "/mercedes/V-Klasse/w176-1.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/V-Klasse/w176-1.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original: "/mercedes/V-Klasse/w176-2.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/V-Klasse/w176-2.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original:  "/mercedes/V-Klasse/w176-3-groterscherm.jpeg",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail:  "/mercedes/V-Klasse/w176-3-groterscherm.jpeg",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
+    original: "/mercedes/v-klasse/v-klasse-1.png",
+    originalAlt: "Apple CarPlay Mercedes-Benz V-Klasse",
+    originalTitle: "Apple CarPlay Mercedes-Benz V-Klasse",
+    thumbnail: "/mercedes/v-klasse/v-klasse-1.png",
+    thumbnailAlt: "Apple CarPlay Mercedes-Benz V-Klasse",
+    thumbnailTitle: "Apple CarPlay Mercedes-Benz V-Klasse",
   },
 ];
+
 
 
 function checkOpties(e) {
@@ -222,7 +207,7 @@ function checkOpties(e) {
                     <h2>Groot Android scherm voor uw V-Klasse W447</h2>
                     <p>Wilt u een groter en moderner scherm in uw Mercedes V-Klasse W447? Wij kunnen een luxe Android-scherm inbouwen dat volledig compatibel is met Apple CarPlay en Android Auto.</p>
                     <p>Het scherm biedt een overzichtelijk display en toegang tot apps zoals YouTube, Netflix en NPO, terwijl alle originele functies behouden blijven.</p>
-                    <h3>Installatie van het grotere scherm in Viano W639</h3>
+                    <h3>Installatie van het grotere scherm in V-Klasse W447</h3>
                     <p>Onze monteurs installeren het scherm vakkundig, zodat alles direct werkt met uw bestaande systeem. Zo geniet u van een moderne en comfortabele rijervaring.</p>
                     <p>Extra opties zoals het koppelen van een dashcam zijn mogelijk, waarbij de beelden direct op het nieuwe scherm bekeken kunnen worden.</p>
                 </section>

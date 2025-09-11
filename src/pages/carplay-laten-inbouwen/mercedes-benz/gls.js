@@ -41,31 +41,14 @@ export default function Gls() {
 
   const images = [
   {
-    original: "/mercedes/GLS/w176-1.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/GLS/w176-1.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original: "/mercedes/GLS/w176-2.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/GLS/w176-2.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original:  "/mercedes/GLS/w176-3-groterscherm.jpeg",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail:  "/mercedes/GLS/w176-3-groterscherm.jpeg",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
+    original: "/mercedes/gle-gls/w166-1.png",
+    originalAlt: "Apple CarPlay X116 GLS",
+    originalTitle: "Apple CarPlay X116 GLS",
+    thumbnail: "/mercedes/gle-gls/w166-1.png",
+    thumbnailAlt: "Apple CarPlay X116 GLS",
+    thumbnailTitle: "Apple CarPlay X116 GLS",
   },
 ];
-
 
 function checkOpties(e) {
     const gekozenModel = e.target.value;

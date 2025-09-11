@@ -34,33 +34,18 @@ export default function Vito() {
     },
   ];
 
-
+  
   const images = [
   {
-    original: "/mercedes/Vito/w176-1.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/Vito/w176-1.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original: "/mercedes/Vito/w176-2.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/Vito/w176-2.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original:  "/mercedes/Vito/w176-3-groterscherm.jpeg",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail:  "/mercedes/Vito/w176-3-groterscherm.jpeg",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
+    original: "/mercedes/vito/vito-1.png",
+    originalAlt: "Apple CarPlay Mercedes-Benz Vito",
+    originalTitle: "Apple CarPlay Mercedes-Benz Vito",
+    thumbnail: "/mercedes/vito/vito-1.png",
+    thumbnailAlt: "Apple CarPlay Mercedes-Benz Vito",
+    thumbnailTitle: "Apple CarPlay Mercedes-Benz Vito",
   },
 ];
+
 
 
 function checkOpties(e) {

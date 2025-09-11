@@ -37,28 +37,12 @@ export default function Sprinter() {
 
   const images = [
   {
-    original: "/mercedes/Sprinter/w176-1.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/Sprinter/w176-1.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original: "/mercedes/Sprinter/w176-2.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/Sprinter/w176-2.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original:  "/mercedes/Sprinter/w176-3-groterscherm.jpeg",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail:  "/mercedes/Sprinter/w176-3-groterscherm.jpeg",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
+    original: "/mercedes/sprinter/sprinter-1.png",
+    originalAlt: "Apple CarPlay Mercedes-Benz Sprinter",
+    originalTitle: "Apple CarPlay Mercedes-Benz Sprinter",
+    thumbnail: "/mercedes/sprinter/sprinter-1.png",
+    thumbnailAlt: "Apple CarPlay Mercedes-Benz Sprinter",
+    thumbnailTitle: "Apple CarPlay Mercedes-Benz Sprinter",
   },
 ];
 

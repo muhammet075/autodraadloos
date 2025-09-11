@@ -41,31 +41,14 @@ export default function Cls() {
 
   const images = [
   {
-    original: "/mercedes/CLS/w176-1.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/CLS/w176-1.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original: "/mercedes/CLS/w176-2.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/CLS/w176-2.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original:  "/mercedes/CLS/w176-3-groterscherm.jpeg",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail:  "/mercedes/CLS/w176-3-groterscherm.jpeg",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
+    original: "/mercedes/cls/w218-1.avif",
+    originalAlt: "Apple CarPlay w218 CLS",
+    originalTitle: "Apple CarPlay w218 CLS",
+    thumbnail: "/mercedes/cls/w218-1.avif",
+    thumbnailAlt: "Apple CarPlay w218 CLS",
+    thumbnailTitle: "Apple CarPlay w218 CLS",
   },
 ];
-
 
 function checkOpties(e) {
     const gekozenModel = e.target.value;

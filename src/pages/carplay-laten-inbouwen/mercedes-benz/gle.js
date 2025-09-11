@@ -41,31 +41,14 @@ export default function Gle() {
 
   const images = [
   {
-    original: "/mercedes/GLE/w176-1.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/GLE/w176-1.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original: "/mercedes/GLE/w176-2.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/GLE/w176-2.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original:  "/mercedes/GLE/w176-3-groterscherm.jpeg",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail:  "/mercedes/GLE/w176-3-groterscherm.jpeg",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
+    original: "/mercedes/gle-gls/w166-1.png",
+    originalAlt: "Apple CarPlay W166 GLE",
+    originalTitle: "Apple CarPlay W166 GLE",
+    thumbnail: "/mercedes/gle-gls/w166-1.png",
+    thumbnailAlt: "Apple CarPlay W166 GLE",
+    thumbnailTitle: "Apple CarPlay W166 GLE",
   },
 ];
-
 
 function checkOpties(e) {
     const gekozenModel = e.target.value;

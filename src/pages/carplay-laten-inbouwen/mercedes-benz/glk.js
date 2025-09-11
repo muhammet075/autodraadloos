@@ -37,28 +37,12 @@ export default function Glk() {
 
   const images = [
   {
-    original: "/mercedes/GLK/w176-1.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/GLK/w176-1.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original: "/mercedes/GLK/w176-2.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/GLK/w176-2.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original:  "/mercedes/GLK/w176-3-groterscherm.jpeg",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail:  "/mercedes/GLK/w176-3-groterscherm.jpeg",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
+    original: "/mercedes/glk/x204-1.png",
+    originalAlt: "Apple CarPlay W166 GLK",
+    originalTitle: "Apple CarPlay W166 GLK",
+    thumbnail: "/mercedes/glk/x204-1.png",
+    thumbnailAlt: "Apple CarPlay W166 GLK",
+    thumbnailTitle: "Apple CarPlay W166 GLK",
   },
 ];
 

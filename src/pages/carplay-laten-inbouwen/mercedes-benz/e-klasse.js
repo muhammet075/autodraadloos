@@ -46,28 +46,12 @@ export default function EKlasse() {
 
   const images = [
   {
-    original: "/mercedes/E-Klasse/w176-1.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/E-Klasse/w176-1.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original: "/mercedes/E-Klasse/w176-2.png",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail: "/mercedes/E-Klasse/w176-2.png",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
-  },
-  {
-    original:  "/mercedes/E-Klasse/w176-3-groterscherm.jpeg",
-    originalAlt: "yok",
-    originalTitle: "",
-    thumbnail:  "/mercedes/E-Klasse/w176-3-groterscherm.jpeg",
-    thumbnailAlt: "",
-    thumbnailTitle: "",
+    original: "/mercedes/e-klasse/w212-1.png",
+    originalAlt: "Apple CarPlay W212 E-klasse",
+    originalTitle: "Apple CarPlay W212 E-klasse",
+    thumbnail: "/mercedes/e-klasse/w212-1.png",
+    thumbnailAlt: "Apple CarPlay W212 E-klasse",
+    thumbnailTitle: "Apple CarPlay W212 E-klasse",
   },
 ];
 
