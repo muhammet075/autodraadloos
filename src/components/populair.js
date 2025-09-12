@@ -57,7 +57,7 @@ function Populair() {
         {
             merk: "Mercedes-Benz",
             model: "B-Klasse W246",
-            link: "/carplay-laten-inbouwen/mercedes-benz/a-klasse/",
+            link: "/carplay-laten-inbouwen/mercedes-benz/b-klasse/",
             logo: mercedesBenzLogo,
             afbeelding: bKlasseImg,
         },
