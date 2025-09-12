@@ -66,7 +66,7 @@ function Populair() {
 
     return (      
         <div className={styles.populair}>  
-            <h2>Populaire merken en modellen</h2>
+            <h2>🔥 Populaire merken en modellen</h2>
 
             <div>
                 {merken.map((item, index) => (
