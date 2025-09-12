@@ -18,6 +18,7 @@ import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
 import glaImg from "@/assets/mercedes/mercedes-benz-gla.png";
+import Montage from "@/components/montage";
 
 export default function Gla() {
   useEffect(() => {
@@ -273,7 +274,8 @@ function checkOpties(e) {
 
         <Waarom/>
         <Diensten/>
-       
+        <Montage/>
+
     </>
   );
 }

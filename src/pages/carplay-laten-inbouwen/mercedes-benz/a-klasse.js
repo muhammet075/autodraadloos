@@ -18,6 +18,7 @@ import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
 import aKlasseImg from "@/assets/mercedes/mercedes-benz-a-klasse.png";
+import Montage from "@/components/montage";
 
 export default function AKlasse() {
   useEffect(() => {
@@ -296,7 +297,8 @@ function checkOpties(e) {
 
         <Waarom/>
         <Diensten/>
-        
+        <Montage/>
+                
     </>
   );
 }

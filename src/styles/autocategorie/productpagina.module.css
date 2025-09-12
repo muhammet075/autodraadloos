@@ -256,39 +256,58 @@
     max-width: 1250px;
     margin: 100px auto;
     padding: 50px 35px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .seo > div{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 50px;
 }
 
-.seo > div > section{
+.seo > div:first-child{
+    border-bottom: 1px solid #dcdcdc;
     margin: 0 0 50px 0;
+    padding: 0 0 50px 0;
+}
+
+.seo > div > section{
+    margin: 0;
+}
+
+.seo > div > section:nth-of-type(1){
+    width: 60%;
+}
+
+.seo > div > section:nth-of-type(2){
+    width: 30%;
 }
 
 .seo > div > section > h2{
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 500;
     line-height: normal;
     margin: 0 0 5px 0;
 }
 
 .seo > div > section > h3{
-    font-size: 21px;
+    font-size: 16px;
     font-weight: 500;
     line-height: normal;
     margin: 25px 0 5px 0;
 }
 
 .seo > div > section > p{
-    font-size: 14px;
+    font-size: 12px;
+    margin: 0 0 10px 0;
 }
 
 .seo > div > section > img{
-    width: 400px;
+    width: 100%;
     height: auto;
 }
 
@@ -297,33 +316,9 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-
-
-
-
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 1255px) {
     .seo{
-        padding: 15px;
-    }
-    
-    .seo > div{
-        flex-direction: column-reverse;
-        gap: 25px;
-        margin: 0 0 50px 0;
-    }
-
-    .seo > div:last-child{
-        margin: 0;
-    }
-    
-    .seo > div > section{
-        margin: 0 0 25px 0;
-    }
-
-    .seo > div > section > img{
-        margin: 0 auto;
-        display: block;
-        width: 60%;
+        border-radius: 0;
     }
 }
 
@@ -354,6 +349,48 @@
 
     .productpagina > div:nth-of-type(1) > .productgegevens > ul > li > img{
         width: 20px;
+    }
+
+    .seo{
+        padding: 50px 15px 15px 15px;
+        margin: 0;
+    }
+    
+    .seo > div{
+        flex-direction: column-reverse;
+        gap: 25px;
+        margin: 0 0 50px 0;
+    }
+
+    .seo > div:first-child{
+        margin: 0 0 25px 0;
+        padding: 0 0 25px 0;
+    }
+
+    .seo > div:last-child{
+        margin: 0;
+    }
+
+    .seo > div > section:nth-of-type(1){
+        width: 100%;
+    }
+
+    .seo > div > section:nth-of-type(2){
+        width: 75%;
+    }
+
+    .seo > div > section > h2{
+        font-size: 16px;
+    }
+
+    .seo > div > section > h3{
+        font-size: 14px;
+    }
+
+    .seo > div > section > img{
+        margin: 0 auto;
+        display: block;
+        width: 60%;
     }
 }
 

@@ -40,6 +40,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
+    z-index: 99;
 }
 
 .populair > div:nth-of-type(1) > a > img:nth-of-type(2){

@@ -18,6 +18,7 @@ import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
 import claImg from "@/assets/mercedes/mercedes-benz-cla.png";
+import Montage from "@/components/montage";
 
 export default function Cla() {
   useEffect(() => {
@@ -271,6 +272,7 @@ function checkOpties(e) {
 
         <Waarom/>
         <Diensten/>
+        <Montage/>
 
     </>
   );

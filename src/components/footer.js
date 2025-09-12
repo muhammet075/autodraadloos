@@ -8,7 +8,6 @@ import Instagram from "@/assets/icons/instagram2.svg";
 import Facebook from "@/assets/icons/facebook.svg";
 import Tiktok from "@/assets/icons/tiktok.svg";
 import WhatsApp from "@/assets/icons/whatsapp.svg";
-import knopklokReviewLogo from "@/assets/img/knipklok-logo.png";
 import Instagramfeed from "@/components/instagramfeed";
 
 function Footer() {

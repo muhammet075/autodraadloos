@@ -9,30 +9,32 @@ import keus1 from "@/assets/img/keus1.png";
 import keus2 from "@/assets/img/keus2.png";
 import greenCheck from "@/assets/icons/green-check.svg";
 import emailjs from "@emailjs/browser";
-
+import Waarom from "@/components/waarom";
+import Populair from "@/components/populair";
+import Montage from "@/components/montage";
 
 export default function Offerte() {
-useEffect(() => {
-    Object.keys(sessionStorage).forEach(key => {
-        if (key !== "offerteVerzonden") {
-            sessionStorage.removeItem(key);
-        }
-    });
+  useEffect(() => {
+      Object.keys(sessionStorage).forEach(key => {
+          if (key !== "offerteVerzonden") {
+              sessionStorage.removeItem(key);
+          }
+      });
 
-    if (sessionStorage.getItem("offerteVerzonden") === "true") {
-        document.querySelector(".stap1").classList.add("displaynone");
-        document.querySelector(".stap2").classList.add("displaynone");
-        document.querySelector(".stap3").classList.add("displaynone");
-        document.querySelector(".stap4").classList.remove("displaynone");
-        document.querySelector("#stap1-sign").classList.remove("activestap");
-        document.querySelector("#stap2-sign").classList.remove("activestap");
-        document.querySelector("#stap3-sign").classList.remove("activestap");
-        document.querySelector("#stap4-sign").classList.add("activestap");
-        document.querySelector(".offerteloadingstate").classList.add("displaynone");
-        document.querySelector(".offerteafgerondstate").classList.remove("displaynone");    
-    };
+      if (sessionStorage.getItem("offerteVerzonden") === "true") {
+          document.querySelector(".stap1").classList.add("displaynone");
+          document.querySelector(".stap2").classList.add("displaynone");
+          document.querySelector(".stap3").classList.add("displaynone");
+          document.querySelector(".stap4").classList.remove("displaynone");
+          document.querySelector("#stap1-sign").classList.remove("activestap");
+          document.querySelector("#stap2-sign").classList.remove("activestap");
+          document.querySelector("#stap3-sign").classList.remove("activestap");
+          document.querySelector("#stap4-sign").classList.add("activestap");
+          document.querySelector(".offerteloadingstate").classList.add("displaynone");
+          document.querySelector(".offerteafgerondstate").classList.remove("displaynone");    
+      };
 
-}, []);
+  }, []);
 
 
   function checkKenteken(e) {
@@ -337,6 +339,11 @@ useEffect(() => {
           </div>
         </div>
       </div>
+
+      <Waarom/>
+      <Populair/>
+      <Montage/>
+      
     </>
   );
 }

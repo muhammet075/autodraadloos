@@ -18,6 +18,7 @@ import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
 import glkImg from "@/assets/mercedes/mercedes-benz-glk.png";
+import Montage from "@/components/montage";
 
 export default function Glk() {
   useEffect(() => {
@@ -209,6 +210,7 @@ function checkOpties(e) {
 
         <Waarom/>
         <Diensten/>
+        <Montage/>
         
     </>
   );

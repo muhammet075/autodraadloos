@@ -1,0 +1,97 @@
+.montage{
+    max-width: 1250px;
+    margin: 150px auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.montage .montageimg{
+    width: 750px;
+    height: auto;
+}
+
+.montage > div:nth-of-type(2){
+    height: 100%;
+    margin: 0 0 150px -200px
+}
+
+.montage > div:nth-of-type(2) > p{
+    font-size: 40px;
+    line-height: 35px;
+    margin: 0;
+}
+
+.montage > div:nth-of-type(2) > h2{
+    font-size: 55px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 5px 0;
+}
+
+.montage > div:nth-of-type(2) > h3{
+    font-size: 40px;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 1250px) {
+    .montage .montageimg{
+        width: 500px;
+    }
+
+    .montage > div:nth-of-type(2){
+        height: 100%;
+        margin: 0 0 150px -125px
+    }
+
+    .montage > div:nth-of-type(2) > h2{
+        font-size: 40px;
+        margin: 0 0 5px 0;
+    }
+
+    .montage > div:nth-of-type(2) > h3{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .montage .montageimg{
+        width: 75%;
+    }
+
+    .montage{
+        flex-direction: column;
+    }
+
+    .montage > div:nth-of-type(1){
+        width: 90%;
+    }
+
+    .montage > div:nth-of-type(2){
+        width: 100%;
+        margin: 0;
+    }
+
+    .montage > div:nth-of-type(2) > p{
+        position: absolute;
+        top: 8px;
+        left: 46px;
+        font-size: 30px;
+    }
+
+    .montage > div:nth-of-type(2) > h2{
+        font-size: 30px;
+        margin: 0 0 5px 0;
+    }
+
+    .montage > div:nth-of-type(2) > h3{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .montage .montageimg{
+        width: 100%;
+    }
+}

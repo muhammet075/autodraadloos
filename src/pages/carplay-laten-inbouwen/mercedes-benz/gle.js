@@ -18,6 +18,7 @@ import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
 import gleImg from "@/assets/mercedes/mercedes-benz-gle.png";
+import Montage from "@/components/montage";
 
 export default function Gle() {
   useEffect(() => {
@@ -226,7 +227,8 @@ function checkOpties(e) {
 
         <Waarom/>
         <Diensten/>
-        
+        <Montage/>
+
     </>
   );
 }

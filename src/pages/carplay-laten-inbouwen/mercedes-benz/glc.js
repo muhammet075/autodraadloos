@@ -18,6 +18,7 @@ import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
 import glcImg from "@/assets/mercedes/mercedes-benz-glc.png";
+import Montage from "@/components/montage";
 
 export default function Glc() {
   useEffect(() => {
@@ -289,7 +290,8 @@ function checkOpties(e) {
 
         <Waarom/>
         <Diensten/>
-       
+        <Montage/>
+
     </>
   );
 }

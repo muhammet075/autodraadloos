@@ -18,6 +18,7 @@ import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
 import clsImg from "@/assets/mercedes/mercedes-benz-cls.png";
+import Montage from "@/components/montage";
 
 export default function Cls() {
   useEffect(() => {
@@ -217,6 +218,7 @@ function checkOpties(e) {
 
         <Waarom/>
         <Diensten/>
+        <Montage/>
 
     </>
   );

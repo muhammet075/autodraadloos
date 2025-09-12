@@ -18,6 +18,7 @@ import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
 import cKlasseImg from "@/assets/mercedes/mercedes-benz-c-klasse.png";
+import Montage from "@/components/montage";
 
 export default function CKlasse() {
   useEffect(() => {
@@ -305,7 +306,7 @@ function checkOpties(e) {
 
         <Waarom/>
         <Diensten/>
-
+        <Montage/>
 
     </>
   );

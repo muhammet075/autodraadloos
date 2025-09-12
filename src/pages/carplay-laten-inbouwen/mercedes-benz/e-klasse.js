@@ -18,7 +18,7 @@ import closeIco from "@/assets/icons/close.svg";
 import Diensten from "@/components/diensten";
 import Waarom from "@/components/waarom";
 import eKlasseImg from "@/assets/mercedes/mercedes-benz-e-klasse.png";
-
+import Montage from "@/components/montage";
 
 export default function EKlasse() {
   useEffect(() => {
@@ -235,6 +235,7 @@ function checkOpties(e) {
 
         <Waarom/>
         <Diensten/>
+        <Montage/>
 
     </>
   );
