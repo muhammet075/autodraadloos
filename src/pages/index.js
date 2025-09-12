@@ -5,6 +5,7 @@ import styles from "@/styles/pages/home.module.css";
 import Homehero from "@/components/homehero.js";
 import Populair from "@/components/populair";
 import Waarom from "@/components/waarom";
+import Overons from "@/components/overons";
 
 export default function Home() {
   useEffect(() => {
@@ -26,6 +27,7 @@ export default function Home() {
       <Homehero/>
       <Populair/>
       <Waarom/>
+      <Overons/>
 
       <div className={styles.home}>
       </div>
