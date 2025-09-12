@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "@/styles/pages/home.module.css";
 import Homehero from "@/components/homehero.js";
+import Populair from "@/components/populair";
 import Waarom from "@/components/waarom";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       </Head>
 
       <Homehero/>
+      <Populair/>
       <Waarom/>
 
       <div className={styles.home}>
