@@ -71,8 +71,7 @@ function Footer() {
             <li><h2>Handige Links</h2></li>
             <li><Link href="/privacybeleid">Privacybeleid</Link></li>
             <li><Link href="/cookiebeleid">Cookiebeleid</Link></li>
-            <li><Link href="/algemene-voorwaarden">Algemene Voorwaarden</Link></li>
-            <li><Link target="_blank" href="/sitemap.xml">Sitemap</Link></li>
+            <li><Link href="/algemene-voorwaarden">Algemene voorwaarden</Link></li>
           </ul>
 
           <ul>

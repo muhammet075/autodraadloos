@@ -69,7 +69,7 @@ body {
   background-position: 0 25%;
 }
 
-.pagehero-offerte, .pagehero-wordt-aan-gewerkt{
+.pagehero-offerte, .pagehero-wordt-aan-gewerkt, .pagehero-privacybeleid, .pagehero-cookiebeleid, .pagehero-algemene-voorwaarden{
   background-image: url("/background/autodraadloosfooter.jpg");
   background-position: 0 40%;
 }
@@ -467,4 +467,10 @@ button{
     to {
         transform: rotate(0)
     }
+}
+
+.privacybeleid, .cookiebeleid, .algemenevoorwaarden{
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
