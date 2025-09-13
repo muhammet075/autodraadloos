@@ -32,6 +32,7 @@ function Homehero() {
     async function checkKenteken(e){
         const kentekenPlaat = document.querySelector(".kentekenplaat");
             
+            kentekenPlaat.classList.remove("taxikentekenplaat");
             kentekenPlaat.classList.remove("errorstate");
             document.querySelector("#popuploadingstate").classList.remove("displaynone");   
             document.querySelector("#popupbericht").innerHTML = "U wordt doorverwezen naar de juiste pagina.";
@@ -55,7 +56,9 @@ function Homehero() {
             const response = await fetch(url);
             const jsondata = await response.json();
             const kentekenData = jsondata[0];
-            
+
+            console.log(kentekenData)
+
             //geen juiste kenteken ingevuld
             if (jsondata.length === 0){
                 setTimeout(() => {
@@ -66,12 +69,17 @@ function Homehero() {
                 return;
             };
 
-            console.log(kentekenData)
-
             setTimeout(() => {
                 kentekenPlaat.classList.remove("notouch");
                 document.querySelector(".kentekenpopup").classList.remove("displaynone");
                 document.querySelector(".kentekenloadingstate").classList.add("displaynone");
+                
+                try{
+                    if (kentekenData.taxi_indicator === "Ja"){
+                        kentekenPlaat.classList.add("taxikentekenplaat");
+                    };
+                } catch(e){};
+            
             }, 300);
 
             document.querySelector("#automerk").innerHTML = kentekenData.merk

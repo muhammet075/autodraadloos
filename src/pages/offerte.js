@@ -41,6 +41,7 @@ export default function Offerte() {
     const value = e.target.value.replace(/[^a-zA-Z0-9]/g, "");
     e.target.value = value;
 
+    document.querySelector(".kentekeninput").classList.remove("taxikentekenplaat");
     document.querySelector("#kentekenmerk").innerHTML = "";
     document.querySelector(".kentekeninput").classList.remove("successtate");
     document.querySelector(".kentekeninput").classList.remove("errorstate");
@@ -76,8 +77,13 @@ export default function Offerte() {
     setTimeout(() => {
       document.querySelector(".kentekenloadingstate").classList.add("displaynone");
       document.querySelector(".kentekeninput").classList.add("successtate");
-      document.querySelector("#kentekenmerk").innerHTML =
-        jsondata[0].merk + " " + jsondata[0].handelsbenaming + " (" + jsondata[0].datum_eerste_toelating.substring(0, 4) + ")";
+      document.querySelector("#kentekenmerk").innerHTML = jsondata[0].merk + " " + jsondata[0].handelsbenaming + " (" + jsondata[0].datum_eerste_toelating.substring(0, 4) + ")";
+
+      try{
+        if (jsondata[0].taxi_indicator === "Ja"){
+           document.querySelector(".kentekeninput").classList.add("taxikentekenplaat");
+        };
+      } catch(e){};
 
       sessionStorage.setItem("kentekenCorrect", "true");
       sessionStorage.setItem(
@@ -90,6 +96,7 @@ export default function Offerte() {
           carrosserie: jsondata[0].inrichting,
         })
       );
+
     }, 2000);
   };
 
