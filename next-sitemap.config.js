@@ -1,5 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.autodraadloos.nl/', // vervang dit door je eigen domein
-  generateRobotsTxt: true, // maakt ook automatisch een robots.txt
+  siteUrl: 'https://www.autodraadloos.nl', // let op: geen trailing slash hier
+  generateRobotsTxt: true,
+  sitemapSize: 50000, // verhoog dit zodat alles in één sitemap komt
 }

@@ -8,7 +8,6 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "generate:sitemap": "node ./scripts/generate-sitemap.js",
     "postbuild": "next-sitemap"
   },
   "dependencies": {

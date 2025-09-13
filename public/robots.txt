@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.autodraadloos.nl/
+Host: https://www.autodraadloos.nl
 
 # Sitemaps
 Sitemap: https://www.autodraadloos.nl/sitemap.xml
