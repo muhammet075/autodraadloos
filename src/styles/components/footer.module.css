@@ -111,8 +111,6 @@
     transition: 0.2s;
 }
 
-
-
 .footer > div:nth-of-type(2){
     width: 100%;
     background-color: var(--donkerPaars);
@@ -265,6 +263,12 @@
 
     .footer > div:nth-of-type(2) > div ul li{
         font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .footer{    
+        margin-top: 15px;
     }
 }
 

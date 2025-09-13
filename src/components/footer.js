@@ -9,11 +9,15 @@ import Facebook from "@/assets/icons/facebook.svg";
 import Tiktok from "@/assets/icons/tiktok.svg";
 import WhatsApp from "@/assets/icons/whatsapp.svg";
 import Instagramfeed from "@/components/instagramfeed";
+import Footerswiper from "./footerswiper";
+
 
 function Footer() {
 
   useEffect(() => {
+    
     setInterval(()=>document.querySelectorAll('.eapp-cookie-consent-widget-container > a').forEach(el=>el.removeAttribute('style')),10);
+
   }, []);
   
 
@@ -22,6 +26,8 @@ function Footer() {
     <>
 
       <Instagramfeed/>
+      <Footerswiper/>
+
 
       <footer className={styles.footer}>
         <div>
