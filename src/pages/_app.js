@@ -7,6 +7,7 @@ export default function App({ Component, pageProps }) {
   return(
     <>
       <Head>
+        <meta name="robots" content="NOODP"/>
         <meta name="format-detection" content="telephone=no"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <meta property="og:image" content="/ogimg.png"/>
