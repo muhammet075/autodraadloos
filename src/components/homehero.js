@@ -6,6 +6,8 @@ import euFlag from "@/assets/icons/eu-flag.svg";
 import closeIco from "@/assets/icons/close.svg";
 import zoekIco from "@/assets/icons/next-white.svg";
 import checkIco from "@/assets/icons/greencheck.svg";
+import appleCarlayLogo from "@/assets/icons/apple-carplay-logo.svg";
+import androidAutoLogo from "@/assets/icons/android-auto-logo.svg";
 
 function Homehero() {
     
@@ -128,6 +130,16 @@ function Homehero() {
                     <section>
                         <h1>Apple CarPlay en Android Auto laten inbouwen<span>.</span></h1>
                         <h2>Ontdek de mogelijkheden om Apple CarPlay en Android Auto in uw auto te laten installeren</h2>
+                        <div>
+                            <section>
+                                <Image src={appleCarlayLogo} alt="Logo van Apple CarPlay"/>
+                                <h3>Apple<br/> CarPlay</h3>
+                            </section>
+                            <section>
+                                <Image src={androidAutoLogo} alt="Logo van Android Auto"/>
+                                <h3>Android<br/> Auto</h3>
+                            </section>
+                        </div>
                     </section>
                     <section>
                         <img id="homehero-auto" src="/carplay-laten-inbouwen/mercedes-benz/a-klasse.png" alt="Mercedes-Benz auto"/>

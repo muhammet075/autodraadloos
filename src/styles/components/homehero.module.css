@@ -44,14 +44,48 @@
     font-weight: 400;
 }
 
+.herotop > section:nth-of-type(1) > div{
+    display: flex;
+    gap: 25px;
+    margin: 35px 0 -25px 0;
+}
+
+.herotop > section:nth-of-type(1) > div > section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #ffff;
+    border: 1px solid var(--donkerPaars);
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.herotop > section:nth-of-type(1) > div > section > img{
+    width: 45px;
+    height: auto;
+}
+
+.herotop > section:nth-of-type(1) > div > section > h3{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: center;
+    margin: 0;
+}
+
 .herotop > section:nth-of-type(2){
     width: 40%;
     height: auto;
+    margin-top: -50px;
 }
 
 .herotop > section:nth-of-type(2) > img{
     width: 100%;
-    height: auto;
+    height: auto;;
 }
 
 
@@ -294,6 +328,12 @@
     transition: .3s ease;
 }
 
+@media only screen and (max-width: 1150px) {
+    .herotop > section:nth-of-type(1) > div{
+        margin: 25px 0 0 0;
+    }
+}
+
 @media only screen and (max-width: 1020px) {
     .herotop > section:nth-of-type(1) > h1{
         font-size: 30px;
@@ -381,6 +421,11 @@
         text-align: center;
     }
     
+    .herotop > section:nth-of-type(1) > div{
+        justify-content: space-around;
+        gap: 0;
+    }
+
     .herotop > section:nth-of-type(2){
         width: 50%;
         margin: -30px 0 30px 0;
@@ -456,6 +501,30 @@
     .herotop > section:nth-of-type(1){
         width: 100%;
         text-align: initial;
+    }
+
+    .herotop > section:nth-of-type(1) > div{
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .herotop > section:nth-of-type(1) > div > section{
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 7px;
+    }
+
+    .herotop > section:nth-of-type(1) > div > section > img{
+        width: 35px;
+    }
+
+    .herotop > section:nth-of-type(1) > div > section > h3{
+        font-size: 11px;
+        text-align: justify;
+        line-height: normal;
     }
 
     .herotop > section:nth-of-type(2){
