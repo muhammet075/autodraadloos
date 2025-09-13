@@ -22,7 +22,7 @@ function Diensten() {
                         <h3>Apple CarPlay en Android Auto op het originele scherm inbouwen.</h3>
                         <p>Heeft u een <Link href="/carplay-laten-inbouwen/mercedes-benz/" target="_blank" title="Mercedes-Benz">Mercedes-Benz</Link>, BMW, Audi, Volkswagen, Ford of een ander automerk met een scherm zonder <b>Apple CarPlay</b> of <b>Android Auto</b>? Wij kunnen dit eenvoudig voor u <b>installeren</b> / <b>inbouwen</b> op het originele scherm van uw auto.</p>
                         <p>Na de <b>installatie</b> beschikt u over volledige toegang tot <b>Apple CarPlay</b> en <b>Android Auto</b>. U kunt draadloos verbinden via Bluetooth, als extra kunnen wij een extra USB-aansluiting inbouwen, zodat u als extra ook met een kabel kunt verbinden.</p>
-                        <p>Wat onze oplossing uniek maakt, is dat alle bestaande <b>functies</b> beschikbaar blijven. Denk hierbij aan uw huidige menu, de <b>chteruitrijcamera</b> en andere originele systemen van uw auto.</p>
+                        <p>Wat onze oplossing uniek maakt, is dat alle bestaande <b>functies</b> beschikbaar blijven. Denk hierbij aan uw huidige menu, de <b>achteruitrijcamera</b> en andere originele systemen van uw auto.</p>
                         <p>Bovendien kunnen wij de <b>installatie</b> en <b>montage</b> ook bij u op <b>locatie</b> uitvoeren.</p>
                     </section>
                  </div>
