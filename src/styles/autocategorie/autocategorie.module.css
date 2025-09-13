@@ -30,7 +30,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     gap: 20px;
-    margin: 25px auto 100px auto;
+    margin: 25px auto 50px auto;
 }
 
 .autocategorie > div:nth-of-type(2) > a{
@@ -72,6 +72,52 @@
 .autocategorie > div:nth-of-type(2) > a:hover > h3{
     color: var(--donkerPaars);
     transition: .3s ease-in-out;
+}
+
+.geenmodel{
+    margin: 0 0 100px 0;
+    background-color: #f5f5f5;
+    border: 2px solid #efefef;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.geenmodel > h3{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 15px 0;
+}
+
+.geenmodel > p{
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+
+.geenmodel > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 225px;
+    height: 55px;
+    border-radius: 20px;
+    color: #ffff;
+    background-color: var(--donkerPaars);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 25px 0 0 0;
+}
+
+.geenmodel > a:hover{
+    opacity: .7;
+    transition: .3s ease;
+}
+
+.geenmodel > a > img{
+    width: 15px;
+    height: auto;
 }
 
 .seo h2{
@@ -132,6 +178,14 @@
 
     .autocategorie > div:nth-of-type(2) > a > h3{
         font-size: 13px;
+    }
+    
+    .geenmodel > h3{
+        font-size: 22px;
+    }
+
+    .geenmodel > p{
+        font-size: 15px;
     }
 }
 

@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "@/styles/autocategorie/autocategorie.module.css";
 import Pagehero from "@/components/pagehero";
+import verderIco from "@/assets/icons/next-white.svg";
 import mercedesLogo from "@/assets/automerken/mercedes-benz.svg";
 import aKlasseImg from "@/assets/mercedes/mercedes-benz-a-klasse.png";
 import bKlasseImg from "@/assets/mercedes/mercedes-benz-b-klasse.png";
@@ -78,6 +79,13 @@ export default function MercedesBenz() {
               <h3 className="mt-2 text-center">{model.name}</h3>
             </Link>
           ))}
+        </div>
+
+        <div className={styles.geenmodel}>
+          <h3>⚠️ Staat uw model er niet tussen?</h3>
+          <p>Geen zorgen, ook voor uw auto kunnen we CarPlay monteren.</p>
+          <p>Vraag een offerte aan voor uw model via de onderstaande knop.</p>
+          <Link target="_blank" href="/offerte">Offerte aanvragen<Image src={verderIco} alt="Verder icoon"/></Link>
         </div>
 
         <div className={styles.seo}>
