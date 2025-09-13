@@ -132,11 +132,11 @@ function Homehero() {
                         <h2>Ontdek de mogelijkheden om Apple CarPlay en Android Auto in uw auto te laten installeren</h2>
                         <div>
                             <section>
-                                <Image src={appleCarlayLogo} alt="Logo van Apple CarPlay"/>
+                                <Image src={appleCarlayLogo} alt="Logo van Apple CarPlay" title="Apple CarPlay"/>
                                 <h3>Apple<br/> CarPlay</h3>
                             </section>
                             <section>
-                                <Image src={androidAutoLogo} alt="Logo van Android Auto"/>
+                                <Image src={androidAutoLogo} alt="Logo van Android Auto" title="Android Auto"/>
                                 <h3>Android<br/> Auto</h3>
                             </section>
                         </div>
