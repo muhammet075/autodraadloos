@@ -98,7 +98,7 @@
     }
 
     .header > div > nav > ul > li > a{
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 
@@ -122,6 +122,10 @@
     .header > div > button > img{
         width: 30px;
         height: auto;
+    }
+
+    .header > div > nav > ul > li > a{
+        font-size: 14px;
     }
 
     .header > div > a > img{

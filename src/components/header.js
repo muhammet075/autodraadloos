@@ -5,6 +5,7 @@ import styles from "@/styles/components/header.module.css";
 import Logo from "@/assets/logo/autodraadloos-logo.svg";
 import hamburgerIco from "@/assets/icons/hamburger.svg";
 import closeIco from "@/assets/icons/close.svg";
+import homeIco from "@/assets/icons/home.svg";
 
 function Header() {
 
@@ -38,6 +39,7 @@ function Header() {
 
                 <nav className="navmenu displaynonemobile">
                     <ul>
+                        <li><Link onClick={closeHamburger} href="/">Home</Link></li>
                         <li><Link onClick={closeHamburger} href="/carplay-laten-inbouwen">CarPlay laten inbouwen</Link></li>
                         <li><Link onClick={closeHamburger} href="/veelgestelde-vragen">Veelgestelde vragen</Link></li>
                         <li><Link onClick={closeHamburger} href="/portfolio">Portfolio</Link></li>
