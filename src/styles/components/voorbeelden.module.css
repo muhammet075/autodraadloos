@@ -1,0 +1,117 @@
+.voorbeelden{
+    max-width: 1250px;
+    margin: 150px auto;
+    padding: 0 15px;
+}
+
+.voorbeelden > h2{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.voorbeelden > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.voorbeelden > div > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    border: 3px solid var(--donkerPaars);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.voorbeelden > div > a > div{
+    background-color: #00000024;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.voorbeelden > div > a > img{
+    width: 101%;
+    height: 101%;
+    object-fit: fill;
+}
+
+.voorbeelden > div > a:hover > img{
+    transform: scale(1.05);
+    transition: .5s ease;
+}
+
+.voorbeelden > div > a > h3{
+    position: absolute;
+    bottom: 3px;
+    left: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffff;
+    z-index: 99;
+    width: 90%;
+    line-height: normal;
+}
+
+@media only screen and (max-width: 1100px) {  
+    .voorbeelden > div > a{
+        border-radius: 10px;
+    }
+    
+    .voorbeelden > div > a > h3{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 960px) {  
+    .voorbeelden > h2{
+        font-size: 23px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 860px) {  
+    .voorbeelden > div > a > h3{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 610px) {  
+    .voorbeelden > div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .voorbeelden > div > a{
+        border-radius: 5px;
+    }
+
+    .voorbeelden > div > a > h3{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 510px) {  
+    .voorbeelden > div > a > h3{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 430px) {  
+    .voorbeelden > div > a > h3{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 390px) {  
+    .voorbeelden > div > a > h3{
+        font-size: 10px;
+    }
+}

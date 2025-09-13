@@ -8,7 +8,7 @@ export default function Portfolio() {
   const router = useRouter();
 
   useEffect(() => {
-    const el = document.querySelector(".instagramfeed_instagramfeed__2k6LG");
+    const el = document.querySelector(".footerinstagram");
     if (el) el.classList.add("displaynone");
 
     // Cleanup: verwijder de class bij unmount of route change
